@@ -5,10 +5,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="grid-text_wide">
+      <header>
+        <img className="hero-image" src="https://images.unsplash.com/photo-1463725876303-ff840e2aa8d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3732&q=80" alt="aussicht in die berge">
+        </img>
         <img className="wieserhof-logo" src={logo} alt="wieserhof logo"></img>
+      </header>
+      <div className="grid-text_wide">
         <h1>Willkommen auf dem Wieserhof in Tirol</h1>
-        <h2>Die exklusive Ferienwohnung im Ötztal, nur 5 Minuten vom Skigebiet entfernt.</h2>
+        <h2>Die exklusive Ferienwohnung im Ötztal,<br></br>5 Minuten vom Skigebiet entfernt.</h2>
         <p>Wir eröffnen im Dezember 2022, diese Website befindet sich aktuell noch im Aufbau.</p>
 
         <div className="contact">
