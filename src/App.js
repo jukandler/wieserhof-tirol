@@ -1,4 +1,6 @@
 import logo from './wieserhof_logo.jpg';
+import hero_image from './balkon_view.jpg';
+import hero_image_mob from './balkon_view-mobile.jpg';
 import instagram_glyph from './instagram_glyph.png';
 import './App.css';
 
@@ -6,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <img className="hero-image" src="https://images.unsplash.com/photo-1463725876303-ff840e2aa8d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3732&q=80" alt="aussicht in die berge">
-        </img>
+        <picture>
+          <source media="(max-width: 799px)" srcset={hero_image_mob} />
+          <img className="hero-image" src={hero_image} alt="Aussicht vom Balkon ins Tal" />
+        </picture>
         <img className="wieserhof-logo" src={logo} alt="wieserhof logo"></img>
       </header>
       <div className="grid-text_wide">
