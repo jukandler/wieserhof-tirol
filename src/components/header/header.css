@@ -1,7 +1,10 @@
 header {
   position: relative;
   margin-bottom: 80px;
-  background-color: #2e2e2e;
+
+  @media (min-width: 750px) {
+    margin-bottom: 140px;
+  }
 }
 
 .hero-image {
@@ -11,14 +14,13 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1800px;
-  animation: backgroundMoveMobile 20s;
-}
-
-@media (min-width: 750px) {
-  .hero-image {
-    background-position: right center;
-    animation: backgroundMoveDesktop 20s;
+  max-width: 1500px;
+  animation: backgroundMove 20s;
+  margin: 0 auto;
+  
+  @media (min-width: 750px) {
+    background-image: url("./balkon_view.jpg");
+    animation: backgroundMove 40s;
   }
 }
 
@@ -30,20 +32,8 @@ header {
   bottom: -55px;
   left: calc(50% - 75px);
   box-shadow: 5px 5px 40px -20px #2e2e2e;
-}
 
-@media (min-width: 750px) {
-    header {
-    margin-bottom: 140px;
-    }
-
-    .hero-image {
-      background-image: url("./balkon_view-mobile.jpg");
-      height: 35vh;
-      /* background-position: right; */
-    }
-
-  .wieserhof-logo {
+  @media (min-width: 750px) {
     width: 250px;
     height: 250px;
     bottom: -95px;
@@ -51,16 +41,7 @@ header {
   }
 }
 
-@keyframes backgroundMoveDesktop {
-  from {
-    background-position: right bottom;
-  }
-  to   {
-    background-position: right center;
-  }
-}
-
-@keyframes backgroundMoveMobile {
+@keyframes backgroundMove {
   from {
     background-position: right center;
   }
