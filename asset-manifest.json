@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bc40a56.css",
-    "main.js": "/static/js/main.cd19a69e.js",
+    "main.css": "/static/css/main.21c03955.css",
+    "main.js": "/static/js/main.3e4b9d5b.js",
     "static/js/787.5c39024c.chunk.js": "/static/js/787.5c39024c.chunk.js",
-    "static/media/balkon_view.jpg": "/static/media/balkon_view.d2c3a12a7299d4b6703a.jpg",
+    "static/media/balkon_view.jpg": "/static/media/balkon_view.4931c1f7b25002077bd3.jpg",
+    "static/media/balkon_view-mobile.jpg": "/static/media/balkon_view-mobile.dd904cbaa45c2ede87f5.jpg",
     "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
     "static/media/OpenSans-Bold.ttf": "/static/media/OpenSans-Bold.fa428cdd2e334e2be904.ttf",
     "static/media/OpenSans-SemiBold.ttf": "/static/media/OpenSans-SemiBold.2f17aae884058c5a85df.ttf",
-    "static/media/balkon_view-mobile.jpg": "/static/media/balkon_view-mobile.047434bc28a2cce740b1.jpg",
-    "static/media/instagram_glyph.png": "/static/media/instagram_glyph.f7b3dff34fba7bf43d83.png",
+    "static/media/instagram_glyph.png": "/static/media/instagram_glyph.85033d372df80a7185ed.png",
+    "static/media/whatsapp_logo.png": "/static/media/whatsapp_logo.c387e7a1e0e0a9a2108e.png",
     "index.html": "/index.html",
-    "main.4bc40a56.css.map": "/static/css/main.4bc40a56.css.map",
-    "main.cd19a69e.js.map": "/static/js/main.cd19a69e.js.map",
+    "main.21c03955.css.map": "/static/css/main.21c03955.css.map",
+    "main.3e4b9d5b.js.map": "/static/js/main.3e4b9d5b.js.map",
     "787.5c39024c.chunk.js.map": "/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bc40a56.css",
-    "static/js/main.cd19a69e.js"
+    "static/css/main.21c03955.css",
+    "static/js/main.3e4b9d5b.js"
   ]
 }
