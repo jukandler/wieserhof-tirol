@@ -88,3 +88,17 @@ b {
   }
 }
 
+#imprint {
+  section {
+    margin-top: 40px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &.align-left p {
+      text-align: justify;
+    }
+  }
+}
+
