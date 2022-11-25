@@ -32,7 +32,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+b {
   font-family: "OpenSansSemiBold";
 }
 
@@ -50,21 +51,40 @@ h3 {
   margin: 0 auto;
 }
 
-.instagram-logo {
-  width: 40px;
-  height: 40px;
+.action-buttons {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  img {
+    width: 40px;
+    height: 40px;
+    transition: width 0.2s, height 0.2s;
+  }
+
+  a:hover img {
+    width: 45px;
+    height: 45px;
+  }
 }
+
 
 .contact {
   background: white;
   padding: 10px 30px;
   border-radius: 20px;
   margin: 40px auto;
-}
+  box-shadow: 10px 10px 20px -20px #2e2e2e;
 
-@media (min-width: 750px) {
-  .contact {
+  p {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 750px) {
     padding: 15px 65px;
     width: fit-content;
   }
 }
+

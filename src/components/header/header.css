@@ -42,10 +42,14 @@ header {
 }
 
 @keyframes backgroundMove {
-  from {
+  0% {
+    opacity: 0;
     background-position: right center;
   }
-  to   {
+  5% {
+    opacity: 1;
+  }
+  100%   {
     background-position: center center;
   }
 }
