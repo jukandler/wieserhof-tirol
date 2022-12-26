@@ -9,7 +9,9 @@ function Imprint() {
                 <h1>Impressum</h1>
                 <section>
                     <h3>Inhaber und verantwortlich für den Inhalt:</h3>
-                    <p><b>Barbara Untermayer &amp; Michael Fischer</b></p>
+                    <p><b>Michael Fischer</b></p>
+                    <p>ATU: 57 616 137</p>
+                    <p>Sitz des Unternehmens: Oetzerau</p>
                     <p>Wies 130, 6433 Oetz, Tirol</p>
                     <p>Telefon: <a href="tel:+4369910553435">+43 699 1055 3435</a></p>
                     <p>E-Mail: <a href="mailto:info@wieserhof-tirol.at">info@wieserhof-tirol.at</a></p>
