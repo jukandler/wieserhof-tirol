@@ -1,5 +1,6 @@
 import instagram_glyph from '../instagram_glyph.png';
 import whatsapp_glyph from '../whatsapp_logo.png';
+import facebook_glyph from '../facebook_logo.png';
 
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
@@ -20,8 +21,14 @@ function Home() {
                     <p>Telefon: <a href="tel:+4369910553435">+43 699 1055 3435</a></p>
                     <p>E-Mail: <a href="mailto:info@wieserhof-tirol.at">info@wieserhof-tirol.at</a></p>
                 </div>
-                <p>Melde dich auch gerne über Instagram oder Whatsapp bei uns:</p>
+                <p>Melde dich auch gerne über Facebook, Instagram oder Whatsapp bei uns:</p>
                 <div className="action-buttons">
+                    <a 
+                    href="https://www.facebook.com/people/Wieserhof-Tirol/100088885545237/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        <img className="facebook-logo" src={facebook_glyph} alt="facebook logo"></img>
+                    </a>
                     <a 
                     href="https://www.instagram.com/wieserhof_tirol/"
                     target="_blank"
