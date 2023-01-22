@@ -4,12 +4,12 @@ import {
   HashRouter,
 } from "react-router-dom";
 
-import Home from './pages/Home';
-
 import './variables.css';
 import './fonts.css'
 import './typography.css'
 import './App.css';
+
+import Home from './pages/Home';
 import Imprint from "./pages/Imprint";
 import ScrollToTop from "./helpers/scrollToTop";
 import Navigation from "./components/Navigation/Navigation";

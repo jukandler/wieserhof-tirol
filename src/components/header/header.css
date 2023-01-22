@@ -1,55 +1,19 @@
-header {
-  position: relative;
-  margin-bottom: 80px;
+header.regular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 
-  @media (min-width: 750px) {
-    margin-bottom: 140px;
+  h1 {
+    margin: 45px 0;
   }
-}
 
-.hero-image {
-  background-image: url("./balkon_view-mobile.jpg");
-  width: 100vw;
-  height: 40vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 1500px;
-  animation: backgroundMove 20s;
-  margin: 0 auto;
-  
-  @media (min-width: 750px) {
-    background-image: url("./balkon_view.jpg");
-    animation: backgroundMove 40s;
-  }
-}
-
-.wieserhof-logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -55px;
-  left: calc(50% - 75px);
-  box-shadow: 5px 5px 40px -20px #2e2e2e;
-
-  @media (min-width: 750px) {
-    width: 250px;
-    height: 250px;
-    bottom: -95px;
-    left: calc(50% - 125px);
-  }
-}
-
-@keyframes backgroundMove {
-  0% {
-    opacity: 0;
-    background-position: right center;
-  }
-  5% {
-    opacity: 1;
-  }
-  100%   {
-    background-position: center center;
+  .header-image { 
+    img {
+      object-fit: cover;
+      width: 100vw;
+      height: 400px;
+    }
   }
 }

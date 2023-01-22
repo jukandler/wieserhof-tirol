@@ -1,17 +1,14 @@
-import logo from './wieserhof_logo.jpg';
-import {
-  Link
-} from "react-router-dom";
-
+import Logo from '../Logo';
 import './header.css';
 
-function Header() {
+function Header({ title, image }) {
     return (
-        <header>
-            <div className="hero-image"></div>
-            <Link to="/">
-                <img className="wieserhof-logo" src={logo} alt="wieserhof logo"></img>
-            </Link>
+        <header className="regular">
+            <Logo color="#6A5744" />
+            <h1>{title}</h1>
+            <div className="header-image grid-expanded">
+                <img src={image} alt="Wieserhof Tirol im Ötztal" />
+            </div>
         </header>
     )
 }

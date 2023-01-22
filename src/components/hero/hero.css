@@ -1,4 +1,4 @@
-header {
+header.hero {
     position: relative;
 
     picture img {
@@ -9,7 +9,7 @@ header {
 
     .logo-container {
         position: absolute;
-        top: 110px;
+        top: 100px;
         left: calc(50% - 100px);
     }
 }

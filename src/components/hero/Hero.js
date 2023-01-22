@@ -6,7 +6,7 @@ import './hero.css';
 
 function Hero() {
     return (
-        <header>
+        <header className="hero">
             <picture>
                 <source
                     media={`(max-width: 750px)`}

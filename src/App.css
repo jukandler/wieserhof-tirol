@@ -1,23 +1,10 @@
-body {
-  background-color: var(--color-primary);
-}
-
 .grid-text_wide {
   max-width: min(648px, calc(100% - (2 * 25px)));
   margin: 0 auto;
 }
 
-#imprint {
-  section {
-    margin-top: 40px;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &.align-left p {
-      text-align: justify;
-    }
-  }
+.grid-expanded {
+  max-width: 912px;
+  margin: 0 auto;
 }
 
