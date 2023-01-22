@@ -1,20 +1,27 @@
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans"),
-  url("./fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "CrimsonProLight";
+  src: local("CrimsonProLight"),
+  url("./fonts/CrimsonPro/CrimsonPro-Light.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "OpenSansBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-family: "CrimsonProItalic";
+  src: local("CrimsonProItalic"),
+  url("./fonts/CrimsonPro/CrimsonPro-Italic.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "OpenSansSemiBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+  url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: local("MontserratSemiBold"),
+  url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: bold;
 }

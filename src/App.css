@@ -1,8 +1,6 @@
 .App {
-  font-family: "OpenSans";
   text-align: center;
   background-color: var(--color-primary);
-  color: #2e2e2e;
   min-height: 100vh;
   box-sizing: border-box; 
 }
