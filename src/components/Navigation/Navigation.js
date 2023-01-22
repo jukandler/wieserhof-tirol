@@ -1,5 +1,4 @@
 import './navigation.css';
-import MenuIcon from "../../assets/icons/menu.svg";
 import CloseIcon from "../../assets/icons/close.svg";
 import CallIcon from "../../assets/icons/call.png";
 import MailIcon from "../../assets/icons/mail.png";
@@ -7,8 +6,14 @@ import WhatsappIcon from "../../assets/icons/whatsapp.png";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo';
+import { useLocation } from 'react-router-dom'
+import MenuIcon from '../../assets/icons/Menu';
 
 function Navigation() {
+    const location = useLocation();
+    const pathName = location.pathname;
+
+    const menuIconColor = location.pathname === "/" ? "#FFFFFF" : "#6A5744";
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +22,7 @@ function Navigation() {
     return (
         <nav>
             <div className="navbar-icon" onClick={handleClick}>
-                <img src={isOpen ? CloseIcon : MenuIcon} alt="menü schließen"/>
+                {isOpen ? <img src={CloseIcon} alt="menü schließen"/> : <MenuIcon color={menuIconColor}/>}
             </div>
             <div className="sticky-navbar">
                 <div className="action-icons grid-text_wide">

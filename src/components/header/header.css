@@ -12,8 +12,12 @@ header.regular {
   .header-image { 
     img {
       object-fit: cover;
-      width: 100vw;
+      width: 100%;
       height: 400px;
+
+      @media (min-width: 750px) {
+        height: 500px;
+      }
     }
   }
 }
