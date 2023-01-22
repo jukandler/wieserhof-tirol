@@ -1,0 +1,16 @@
+header {
+    position: relative;
+
+    picture img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .logo-container {
+        position: absolute;
+        width: 200px;
+        top: 120px;
+        left: calc(50% - 100px);
+    }
+}
