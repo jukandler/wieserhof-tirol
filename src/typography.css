@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+a {
+  color: #1a6074;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "OpenSansBold";
+}
+
+h2,
+h3,
+b {
+  font-family: "OpenSansSemiBold";
+}

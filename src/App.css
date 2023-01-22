@@ -1,46 +1,7 @@
-@font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans"),
-  url("./fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3,
-a {
-  color: #1a6074;
-  text-decoration: none;
-}
-
-h1 {
-  font-family: "OpenSansBold";
-}
-
-h2,
-h3,
-b {
-  font-family: "OpenSansSemiBold";
-}
-
 .App {
   font-family: "OpenSans";
   text-align: center;
-  background-color: aliceblue;
+  background-color: var(--color-primary);
   color: #2e2e2e;
   min-height: 100vh;
   box-sizing: border-box; 

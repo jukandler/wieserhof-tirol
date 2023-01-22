@@ -6,6 +6,9 @@ import {
 
 import Home from './pages/Home';
 
+import './variables.css';
+import './fonts.css'
+import './typography.css'
 import './App.css';
 import Imprint from "./pages/Imprint";
 import ScrollToTop from "./helpers/scrollToTop";
