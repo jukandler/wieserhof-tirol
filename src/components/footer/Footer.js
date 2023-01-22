@@ -14,7 +14,7 @@ function Footer() {
             <div className="contact">
                 <p>Wies 130, 6433 Oetz, Tirol</p>
                 <p>Telefon: <a href="tel:+4369910553435">+43 699 1055 3435</a></p>
-                <p>E-Mail: <a href="mailto:info@wieserhof-tirol.at">info@wieserhof-tirol.at</a></p>
+                <p>E-Mail: <a href="mailto:info@wieserhof-tirol.at" target="_blank" rel="noopener noreferrer">info@wieserhof-tirol.at</a></p>
             </div>
             <div className="social-icons">
                 <a 

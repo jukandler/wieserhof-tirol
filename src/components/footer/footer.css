@@ -5,6 +5,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 50px 25px;
+    padding-bottom: 75px;
 
     .contact {
         margin: 20px 0;
