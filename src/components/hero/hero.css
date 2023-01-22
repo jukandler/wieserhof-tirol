@@ -9,7 +9,7 @@ header {
 
     .logo-container {
         position: absolute;
-        top: 120px;
+        top: 110px;
         left: calc(50% - 100px);
     }
 }
