@@ -10,12 +10,12 @@ function Hero() {
             <picture>
                 <source
                     media={`(max-width: 750px)`}
-                    srcset={HeroMobile}
+                    srcSet={HeroMobile}
                     // width={mobile.naturalWidth}
                     // height={mobile.naturalHeight}
                 />
                 <img
-                    class="media--{id} image--{id}"
+                    className="media--{id} image--{id}"
                     src={HeroDesktop}
                     alt="Blick ins Ötztal im Winter"
                     // width={desktop.naturalWidth}
