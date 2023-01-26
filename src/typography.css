@@ -10,12 +10,22 @@ body {
   }
 }
 
+p {
+  margin-bottom: 40px;
+
+  &.quote {
+    font-family: "CrimsonProItalic";
+  }
+}
+
 h1 {
   font-family: "CrimsonProLight";
   color: var(--color-accent);
   text-align: center;
   font-size: 38px;
-
+  line-height: 55px;
+  text-transform: uppercase;
+  
   @media (min-width: 750px) {
     font-size: 48px;
   }
@@ -23,9 +33,12 @@ h1 {
 
 h2 {
   font-family: "CrimsonProLight";
+  text-transform: uppercase;
   color: var(--color-accent);
   font-size: 28px;
   margin-top: 40px;
+  line-height: 40px;
+  text-align: center;
 
   @media (min-width: 750px) {
     font-size: 32px;

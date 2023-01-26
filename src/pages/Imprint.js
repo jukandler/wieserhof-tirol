@@ -1,6 +1,6 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import HeaderImage from "../assets/images/balkon_view-mobile.jpg";
+import HeaderImage from "../assets/images/balkon-view.jpg";
 
 function Imprint() {
     return (
