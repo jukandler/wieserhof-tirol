@@ -38,6 +38,10 @@ function Navigation() {
                 <Logo />
                 <div className="navigation-menu__links">
                     <Link to="/" onClick={handleClick}>Startseite</Link>
+                    <Link to="/ferienwohnung" onClick={handleClick}>Ferienwohnung</Link>
+                    <Link to="/wieserhof" onClick={handleClick}>Der Wieserhof</Link>
+                    <Link to="/oetztal" onClick={handleClick}>Natur und Aktiv</Link>
+                    <Link to="/anfahrt" onClick={handleClick}>Anfahrt</Link>
                 </div>
             </div>}
         </nav>

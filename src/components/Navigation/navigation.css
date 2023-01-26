@@ -73,16 +73,20 @@ nav {
         }
 
         &__links {
-            margin-top: 300px;
+            margin-top: 220px;
         }
 
         a {
             font-family: "CrimsonPro";
             font-size: 30px;
             color: white;
+            display: block;
+            margin: 25px 0;
+            text-align: center;
             
             @media (min-width: 750px) {
                 font-size: 40px;
+                margin: 50px 0;
             }
         }
     }
