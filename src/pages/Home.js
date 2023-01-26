@@ -13,7 +13,6 @@ function Home() {
         <div id="home">
             <Hero />
             <section className="grid-text_wide">
-                <h1>Willkommen auf dem Wieserhof</h1>
                 <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom Skigebiet entfernt.</h3>
                 <p>Herzlich Willkommen am Bergbauernhof Wieserhof in Oetz in Tirol! Der Wieserhof befindet sich in Alleinlage auf ca. 1.100 m Seehöhe abseits von jeglichem Verkehr und ist der ideale Urlaubsort für Ruhesuchende, Naturliebhaber und Familien.</p>
             </section>

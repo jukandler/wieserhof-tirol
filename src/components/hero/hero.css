@@ -1,6 +1,14 @@
 header.hero {
     position: relative;
 
+    h1 {
+        position: absolute;
+        top: 240px;
+        color: var(--color-primary);
+        text-align: center;
+        width: 100%;
+    }
+
     picture img {
         height: 100vh;
         width: 100vw;
