@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './imageTile.css';
 
-function ImageTile({ imageMobile, imageDesktop, title}) {
+function ImageTile({ imageMobile, imageDesktop, title, linkTo}) {
     return (
-        <Link to="/impressum" className="image-tile">
+        <Link to={linkTo} className="image-tile">
             <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
             <picture>
                 <source

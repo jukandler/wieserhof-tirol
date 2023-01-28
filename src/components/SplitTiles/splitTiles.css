@@ -1,0 +1,24 @@
+.split-tiles {
+    @media(min-width: 750px) {
+        display: flex;
+
+        &.split-tiles_reverse {
+            flex-direction: row-reverse;
+        }
+
+        .split-tile-image,
+        .split-tile-text {
+            width: 50vw;
+            height: 50vw;
+            box-sizing: border-box;
+        }
+
+        .split-tile-text {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

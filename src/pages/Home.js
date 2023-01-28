@@ -1,43 +1,45 @@
 import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
-import ImageTile from '../components/ImageTile/ImageTile';
 import ImageTileBadMobile from "../assets/images/image-tile-bad_mob.jpg"
 import ImageTileBadDesktop from "../assets/images/image-tile-bad.jpg"
 import ImageTileBalkonViewDesktop from "../assets/images/balkon-view.jpg"
 import ImageTileBalkonViewMobile from "../assets/images/balkon-view_mob.jpg"
 import ImageTileOetztalDesktop from "../assets/images/oetz-im-winter.jpg"
 import ImageTileOetztalMobile from "../assets/images/oetz-im-winter_mob.jpg"
+import SplitTiles from '../components/SplitTiles/SplitTiles';
 
 function Home() {
     return (
         <div id="home">
             <Hero />
-            <section className="grid-text_wide">
+            <section className="grid-text_wide" style={{ margin: "60px auto" }}>
                 <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom Skigebiet entfernt.</h3>
                 <p>Herzlich Willkommen am Bergbauernhof Wieserhof in Oetz in Tirol! Der Wieserhof befindet sich in Alleinlage auf ca. 1.100 m Seehöhe abseits von jeglichem Verkehr und ist der ideale Urlaubsort für Ruhesuchende, Naturliebhaber und Familien.</p>
             </section>
-            <ImageTile 
-                title="Unsere exklusive Ferienwohnung"
+            <SplitTiles
+                linkTo="/ferienwohnung"
+                imageTileTitle="Unsere exklusive Ferienwohnung"
                 imageDesktop={ImageTileBadDesktop}
                 imageMobile={ImageTileBadMobile}
+                textTileTitle="Luxus und Gemütlichkeit auf 85m²"
+                text="Die hochwertig renovierte und voll ausgestattete Ferienwohnung ist mit viel Liebe zum Detail eingerichtet und bietet Ihnen allen Komfort mit einem Hauch von Luxus."
             />
-            <section className="grid-text_wide">
-                <h2>Erholung mitten in den Bergen</h2>
-                <p>Ruhe, frische Luft, die Höhe und der einzigartige Ausblick versprechen unvergessliche Urlaubstage. Auch unsere Hoftiere (Pferde, Ziegen, Enten, Hund, Katzen) heißen Sie herzlich willkommen.</p>
-            </section>
-            <ImageTile 
-                title="Landleben auf dem Wieserhof"
+            <SplitTiles 
+                linkTo="/wieserhof"
+                imageTileTitle="Landleben auf dem Wieserhof"
                 imageDesktop={ImageTileBalkonViewDesktop}
                 imageMobile={ImageTileBalkonViewMobile}
+                textTileTitle="Erholung mitten in den Bergen"
+                text="Ruhe, frische Luft, die Höhe und der einzigartige Ausblick versprechen unvergessliche Urlaubstage. Auch unsere Hoftiere (Pferde, Ziegen, Enten, Hund, Katzen) heißen Sie herzlich willkommen."
+                reverse={true}
             />
-            <section className="grid-text_wide">
-                <h2>Ausflugsziele im Ötztal</h2>
-                <p>Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung.</p>
-            </section>
-            <ImageTile 
-                title="Das Ötztal<br>Natur und Aktiv"
+            <SplitTiles 
+                linkTo="/oetztal"
+                imageTileTitle="Das Ötztal<br>Natur und Aktiv"
                 imageDesktop={ImageTileOetztalDesktop}
                 imageMobile={ImageTileOetztalMobile}
+                textTileTitle="Ausflugsziele im Ötztal"
+                text="Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung."
             />
             <section className="grid-text_wide">
                 <h2>Ihre Gastgeber</h2>
