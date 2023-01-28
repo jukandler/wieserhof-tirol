@@ -46,7 +46,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(65, 48, 33, 0.55);
+        background-color: rgba(65, 48, 33, 0.45);
         transition: all 600ms ease-in-out;
         pointer-events: none;
     }

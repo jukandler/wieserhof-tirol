@@ -7,20 +7,16 @@ import './hero.css';
 function Hero() {
     return (
         <header className="hero">
-            <h1>Willkommen auf dem Wieserhof</h1>
+            <h1>Willkommen<br></br>auf dem Wieserhof</h1>
             <picture>
                 <source
                     media={`(max-width: 750px)`}
                     srcSet={HeroMobile}
-                    // width={mobile.naturalWidth}
-                    // height={mobile.naturalHeight}
                 />
                 <img
                     className="media--{id} image--{id}"
                     src={HeroDesktop}
                     alt="Blick ins Ötztal im Winter"
-                    // width={desktop.naturalWidth}
-                    // height={desktop.naturalHeight}
                 />
             </picture>
             <div className="logo-container">

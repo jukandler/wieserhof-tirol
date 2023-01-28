@@ -4,6 +4,7 @@ import HeaderImage from "../assets/images/wohnraum.jpg";
 import ContentImage from '../components/ContentImage/ContentImage';
 import wohnraum2 from "../assets/images/wohnraum2.jpg";
 import bad from "../assets/images/bad.jpg";
+import ImageGallery from '../components/ImageGallery/ImageGallery';
 
 function Apartment() {
     return (
@@ -22,6 +23,7 @@ function Apartment() {
                 <p>Im Obergeschoss befindet sich ein weiteres Schlafzimmer mit einem Doppelbett und zwei weiteren getrennten Betten (Achtung Dachschräge) </p>
             </div>
             <h2>Bildergalerie:</h2>
+            <ImageGallery />
             <Footer />
         </div>
     )
