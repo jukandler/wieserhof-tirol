@@ -2,9 +2,14 @@ import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import HeaderImage from "../assets/images/wohnraum.jpg";
 import ContentImage from '../components/ContentImage/ContentImage';
-import wohnraum2 from "../assets/images/wohnraum2.jpg";
 import bad from "../assets/images/bad.jpg";
 import ImageGallery from '../components/ImageGallery/ImageGallery';
+import BulletList from '../components/BulletList/BulletList';
+import IconBanderole from '../components/IconBanderole/IconBanderole';
+import FamilyIcon from "../assets/icons/family.png";
+import DoubleBedIcon from "../assets/icons/double-bed.png";
+import DogIcon from "../assets/icons/dog.png";
+import NoSmokingIcon from "../assets/icons/no-smoking.png";
 
 function Apartment() {
     return (
@@ -14,7 +19,26 @@ function Apartment() {
                 <h3>Eingerichtet mit viel Liebe zum Detail: Luxus und Gemütlichkeit auf 85 m²</h3>
                 <p>Das Herzstück des Appartements bildet ein großer, gemütlicher und offener Wohnraum mit einer vollausgestatteten Küche mit Essbereich und beheiztem Bauernofen für kuschelige Tage. In diesem Wohnraum befindet sich auch ein großes Doppelbett mit Zugang zum begehbaren Schrank.</p>
             </div>
-            <ContentImage imageDesktop={wohnraum2}/>
+            <IconBanderole 
+                items={[
+                    {
+                        icon: FamilyIcon,
+                        text: "bis zu<br>6 Personen"
+                    },
+                    {
+                        icon: DoubleBedIcon,
+                        text: "2 Doppelbetten<br>2 Einzelbetten"
+                    },
+                    {
+                        icon: DogIcon,
+                        text: "Haustiere<br>willkommen"
+                    },
+                    {
+                        icon: NoSmokingIcon,
+                        text: "Nichtraucher"
+                    }
+                ]}
+            />
             <div className="grid-text_wide">
                 <p>Unser Highlight ist das moderne, große Badezimmer mit freistehender Badewanne, Dusche und WC; genießen Sie einen traumhaften Ausblick von unserem möblierten Balkon; unser herrlicher Garten mit Kinderspielplatz darf gerne mitbenützt werden.</p>
             </div>
@@ -24,6 +48,7 @@ function Apartment() {
             </div>
             <h2>Bildergalerie:</h2>
             <ImageGallery />
+            <BulletList />  
             <Footer />
         </div>
     )

@@ -1,0 +1,16 @@
+.bullet-list {
+    
+    ul {
+        
+        @media (min-width: 750px) {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+    
+            li {
+                width: 50%;
+            }
+        }
+    }
+}
