@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo';
 import { useLocation } from 'react-router-dom'
-import MenuToCloseIcon from '../../assets/icons/MenuToCloseIcon';
+import MenuToCloseIcon from '../MenuToCloseIcon/MenuToCloseIcon';
 
 function Navigation() {
     const location = useLocation();
