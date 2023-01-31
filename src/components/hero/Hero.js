@@ -1,4 +1,4 @@
-import Logo from "../Logo";
+import Logo from "../Logo/Logo";
 import HeroMobile from "../../assets/images/oetz-im-winter_mob.jpg"
 import HeroDesktop from "../../assets/images/oetz-im-winter.jpg"
 

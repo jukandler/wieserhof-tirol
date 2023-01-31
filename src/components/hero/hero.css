@@ -7,6 +7,10 @@ header.hero {
         color: var(--color-primary);
         text-align: center;
         width: 100%;
+
+        @media (min-width: 750px) {
+            top: 280px;
+        }
     }
 
     picture img {
@@ -19,5 +23,9 @@ header.hero {
         position: absolute;
         top: 100px;
         left: calc(50% - 100px);
+        
+        @media (min-width: 750px) {
+            left: calc(50% - 150px);
+        }
     }
 }

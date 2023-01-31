@@ -4,7 +4,7 @@ import MailIcon from "../../assets/icons/mail.png";
 import WhatsappIcon from "../../assets/icons/whatsapp.png";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../Logo';
+import Logo from '../Logo/Logo';
 import { useLocation } from 'react-router-dom'
 import MenuToCloseIcon from '../MenuToCloseIcon/MenuToCloseIcon';
 

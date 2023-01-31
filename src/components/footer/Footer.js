@@ -1,7 +1,7 @@
 import {
   Link
 } from "react-router-dom";
-import Logo from "../Logo";
+import Logo from "../Logo/Logo";
 import IconFacebook from "../../assets/icons/facebook.png";
 import IconInstagram from "../../assets/icons/instagram.png";
 
