@@ -1,18 +1,14 @@
 import { Link } from 'react-router-dom';
 import './imageTile.css';
 
-function ImageTile({ imageMobile, imageDesktop, title, linkTo}) {
+function ImageTile({ image, title, linkTo}) {
     return (
         <Link to={linkTo} className="image-tile">
             <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
             <picture>
-                <source
-                    media={`(max-width: 750px)`}
-                    srcSet={imageMobile}
-                />
                 <img
                     className="media--{id} image--{id}"
-                    src={imageDesktop}
+                    src={image}
                     alt={title}
                 />
             </picture>

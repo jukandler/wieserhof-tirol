@@ -1,11 +1,8 @@
 import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
-import ImageTileBadMobile from "../assets/images/image-tile-bad_mob.jpg"
-import ImageTileBadDesktop from "../assets/images/image-tile-bad.jpg"
-import ImageTileBalkonViewDesktop from "../assets/images/balkon-view.jpg"
-import ImageTileBalkonViewMobile from "../assets/images/balkon-view_mob.jpg"
-import ImageTileOetztalDesktop from "../assets/images/oetz-im-winter.jpg"
-import ImageTileOetztalMobile from "../assets/images/oetz-im-winter_mob.jpg"
+import ImageTileBad from "../assets/images/image-tile-bad.jpg"
+import ImageTileBalkonView from "../assets/images/balkon-view.jpg"
+import ImageTileOetztal from "../assets/images/skigebiet-hochoetz.jpeg"
 import SplitTiles from '../components/SplitTiles/SplitTiles';
 
 function Home() {
@@ -19,16 +16,14 @@ function Home() {
             <SplitTiles
                 linkTo="/ferienwohnung"
                 imageTileTitle="Unsere exklusive Ferienwohnung"
-                imageDesktop={ImageTileBadDesktop}
-                imageMobile={ImageTileBadMobile}
+                image={ImageTileBad}
                 textTileTitle="Luxus und Gemütlichkeit auf 85m²"
                 text="Die hochwertig renovierte und voll ausgestattete Ferienwohnung ist mit viel Liebe zum Detail eingerichtet und bietet Ihnen allen Komfort mit einem Hauch von Luxus."
             />
             <SplitTiles 
                 linkTo="/wieserhof"
                 imageTileTitle="Landleben auf dem Wieserhof"
-                imageDesktop={ImageTileBalkonViewDesktop}
-                imageMobile={ImageTileBalkonViewMobile}
+                image={ImageTileBalkonView}
                 textTileTitle="Erholung mitten in den Bergen"
                 text="Ruhe, frische Luft, die Höhe und der einzigartige Ausblick versprechen unvergessliche Urlaubstage. Auch unsere Hoftiere (Pferde, Ziegen, Enten, Hund, Katzen) heißen Sie herzlich willkommen."
                 reverse={true}
@@ -36,8 +31,7 @@ function Home() {
             <SplitTiles 
                 linkTo="/oetztal"
                 imageTileTitle="Das Ötztal<br>Natur und Aktiv"
-                imageDesktop={ImageTileOetztalDesktop}
-                imageMobile={ImageTileOetztalMobile}
+                image={ImageTileOetztal}
                 textTileTitle="Ausflugsziele im Ötztal"
                 text="Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung."
             />
