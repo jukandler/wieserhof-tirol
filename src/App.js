@@ -17,6 +17,7 @@ import Apartment from "./pages/Apartment";
 import Wieserhof from "./pages/Wieserhof";
 import Oetztal from "./pages/Oetztal";
 import Anfahrt from "./pages/Anfahrt";
+import Anfrage from "./pages/Anfrage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/oetztal" element={<Oetztal/>} />
           <Route exact path="/anfahrt" element={<Anfahrt/>} />
           <Route exact path="/impressum" element={<Imprint/>} />
+          <Route exact path="/anfrage" element={<Anfrage/>} />
         </Routes>
       </HashRouter>
     </div>

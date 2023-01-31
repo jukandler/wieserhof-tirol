@@ -44,7 +44,7 @@ function Imprint() {
                 </section>
                 <section>
                     <h2>Bildarchive</h2>
-                    <p>Vielen Dank an das Bildarchiv von Ötztal Tourismus für die freundliche Unterstützung.</p>
+                    <p>Vielen Dank an das Bildarchiv von Ötztal Tourismus (<a href="https://www.oetztal.com/de/" target="_blank" rel="noopener noreferrer">www.oetztal.com</a>) für die freundliche Unterstützung.</p>
                 </section>
             </div>
             <Footer />

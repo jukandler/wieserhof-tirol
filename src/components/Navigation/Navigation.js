@@ -42,6 +42,7 @@ function Navigation() {
                     <Link to="/wieserhof" onClick={handleClick}>Der Wieserhof</Link>
                     <Link to="/oetztal" onClick={handleClick}>Natur und Aktiv</Link>
                     <Link to="/anfahrt" onClick={handleClick}>Anfahrt</Link>
+                    <Link to="/anfrage" onClick={handleClick}>Anfrage</Link>
                 </div>
             </div>}
         </nav>
