@@ -19,32 +19,27 @@ function Form() {
 
     return (
         <form ref={form} onSubmit={sendEmail}>
-            {/* <!-- name --> */}
             <div className="form-group">
-                <label htmlFor="from_name">Name</label>
+                <label htmlFor="from_name">Ihr Name</label>
                 <input
                     type="name"
                     name="from_name"
                     className="form-control"
                     id="from_name"
-                    placeholder="enter your name"
                 />
             </div>
-
-            {/* <!-- email --> */}
+            {/* TODO: An- und Abreisedatum */}
             <div className="form-group">
-                <label htmlFor="reply_to">Email address</label>
+                <label htmlFor="reply_to">Ihre E-Mail Adresse</label>
                 <input
                     type="email"
                     name="reply_to"
                     className="form-control"
                     id="reply_to"
-                    placeholder="enter your email"
                 />
             </div>
-
             <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Ihre Nachricht an uns</label>
                 <textarea
                     className="form-control"
                     id="message"
@@ -52,11 +47,10 @@ function Form() {
                     rows="5"
                 ></textarea>
             </div>
-
-
-            <button type="submit" className="btn btn-primary">
-                Submit
+            <button type="submit" className="button button-primary">
+                Anfrage senden
             </button>
+            {/* TODO: Datenschutz? */}
         </form>
     )
 }

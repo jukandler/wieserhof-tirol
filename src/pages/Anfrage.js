@@ -1,9 +1,15 @@
 import Form from '../components/form/Form';
+import Header from '../components/header/Header';
 
 function Anfrage() {
     return (
         <div id="contact-form">
-            <Form />
+            <Header title="Anfrage-Formular"/>
+            <div className="grid-text_wide">
+                <h3>Wir freuen uns, dass Sie sich für Urlaub bei uns auf dem Wieserhof interessieren!</h3>
+                <p>Nutzen Sie für Ihre unverbindliche Anfrage am besten unser Formular, wir schicken Ihnen gerne ein maßgeschneidertes Angebot zu.</p>
+                <Form />
+            </div>
         </div>
     )
 }
