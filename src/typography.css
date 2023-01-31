@@ -18,6 +18,11 @@ p {
   }
 }
 
+.no-margin p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 h1 {
   font-family: "CrimsonProLight";
   color: var(--color-accent);
