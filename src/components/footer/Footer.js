@@ -4,6 +4,7 @@ import {
 import Logo from "../Logo/Logo";
 import IconFacebook from "../../assets/icons/facebook.png";
 import IconInstagram from "../../assets/icons/instagram.png";
+import OetztalLogo from "../../assets/images/logo-oetztal.jpg"
 
 import './footer.css';
 
@@ -30,6 +31,9 @@ function Footer() {
                         <img className="instagram-logo" src={IconInstagram} alt="instagram logo"></img>
                 </a>
             </div>
+            <a className="oetztal-logo" href="https://www.oetztal.com/de/" target="_blank" rel="noopener noreferrer">
+                <img src={OetztalLogo} alt="Logo Ötztal" style={{width: "75px", margin: "10px 0"}} />
+            </a>
             <Link to="/impressum" className="link-imprint">Impressum</Link>
         </footer>
     )
