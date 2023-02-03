@@ -4,7 +4,7 @@ function IconBanderole({ items }) {
     return (
         <div className="icon-banderole">
             <div className="container grid-expanded">
-                {items.map((item) => (<div className="item">
+                {items.map((item, i) => (<div className="item" key={i}>
                     <div className="icon">
                         <img src={item.icon} alt="Icon"/>
                     </div>
