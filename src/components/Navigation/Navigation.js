@@ -1,4 +1,5 @@
 import './navigation.css';
+import PinIcon from "../../assets/icons/pin.png";
 import CallIcon from "../../assets/icons/call.png";
 import MailIcon from "../../assets/icons/mail.png";
 import WhatsappIcon from "../../assets/icons/whatsapp.png";
@@ -23,12 +24,15 @@ function Navigation() {
             </div>
             <div className="sticky-navbar">
                 <div className="action-icons grid-text_wide">
+                    <Link to="/anfahrt">
+                        <img src={PinIcon} alt="Anfahrt"/>
+                    </Link>
                     <a href="tel:+4369910553435">
                         <img src={CallIcon} alt="Anrufen"/>
                     </a>
-                    <a href="mailto:info@wieserhof-tirol.at" target="_blank" rel="noopener noreferrer">
+                    <Link to="/anfrage">
                         <img src={MailIcon} alt="E-Mail schicken"/>
-                    </a>
+                    </Link>
                     <a href="https://wa.me/4369910553435" target="_blank" rel="noopener noreferrer">
                         <img src={WhatsappIcon} alt="Whatsapp schicken"/>
                     </a>
