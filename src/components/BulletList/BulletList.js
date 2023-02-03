@@ -15,6 +15,8 @@ function BulletList() {
                 <li>Mikrowelle</li>
                 <li>Kühlschrank</li>
                 <li>Kaffee-Maschine</li>
+                <li>Milchschäumer</li>
+                <li>Toaster</li>
                 <li>Geschirrspülmaschine</li>
                 <li>Geschirr</li>
                 <li>Elektroherd mit Cerankochfeld</li>
@@ -24,7 +26,8 @@ function BulletList() {
                 <li>Tisch- und Küchenwäsche</li>
                 
                 <h3>Außenbereich</h3>
-                <li>Garten</li>
+                <li>Großer Garten</li>
+                <li>Ca. 3 Hektar Hoffläche, zum Großteil um das Wohnhaus und Wirtschaftsgebäude</li>
                 <li>Balkon</li>
                 <li>Terrasse</li>
                 <li>Privater Eingang</li>

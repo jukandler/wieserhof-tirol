@@ -18,7 +18,7 @@ function Home() {
                 imageTileTitle="Unsere exklusive Ferienwohnung"
                 image={ImageTileBad}
                 textTileTitle="Luxus und Gemütlichkeit auf 85m²"
-                text="Die hochwertig renovierte und voll ausgestattete Ferienwohnung ist mit viel Liebe zum Detail eingerichtet und bietet Ihnen allen Komfort mit einem Hauch von Luxus."
+                text="Die mit hochwertigem Altholz ausgebaute und voll ausgestattete Ferienwohnung ist mit viel Liebe zum Detail eingerichtet und bietet Ihnen allen Komfort mit einem Hauch von Luxus."
                 reverse={true}
             />
             <SplitTiles 

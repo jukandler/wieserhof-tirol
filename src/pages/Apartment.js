@@ -40,7 +40,7 @@ function Apartment() {
                 ]}
             />
             <div className="grid-text_wide">
-                <p>Unser Highlight ist das moderne, große Badezimmer mit freistehender Badewanne, Dusche und WC; genießen Sie einen traumhaften Ausblick von unserem möblierten Balkon; unser herrlicher Garten mit Kinderspielplatz darf gerne mitbenützt werden.</p>
+                <p>Unser Highlight ist das moderne, große Badezimmer mit freistehender Badewanne, Dusche mit integrierter Regendusche und WC; genießen Sie einen traumhaften Ausblick von unserem möblierten Balkon; unser herrlicher Garten mit Kinderspielplatz darf gerne mitbenützt werden. Weiters befinden sich rund um das Haus und das Wirtschaftsgebäude ca. 3 Hektar Wiesen, die in unserem Besitz sind.</p>
             </div>
             <ContentImage imageDesktop={bad}/>
             <div className="grid-text_wide">
