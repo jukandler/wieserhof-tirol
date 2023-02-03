@@ -1,7 +1,7 @@
 import Form from '../components/form/Form';
 import Header from '../components/header/Header';
 
-function Anfrage() {
+function Contact() {
     return (
         <div id="contact-form">
             <Header title="Anfrage-Formular"/>
@@ -14,4 +14,4 @@ function Anfrage() {
     )
 }
 
-export default Anfrage;
+export default Contact;
