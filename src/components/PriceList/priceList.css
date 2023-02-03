@@ -1,0 +1,25 @@
+.price-list {
+    table {
+        width: 100%;
+        border-style: solid;
+        border-color: var(--color-accent);
+        border-collapse: collapse;
+
+        th {
+            color: var(--color-accent);
+        }
+
+        td,
+        th {
+            vertical-align: top;
+            border-style: solid;
+            padding: 10px;
+        }
+    }
+
+    .season {
+        display: block;
+        font-size: 15px;
+        font-style: italic;
+    }
+}

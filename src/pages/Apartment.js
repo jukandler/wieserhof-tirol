@@ -10,6 +10,7 @@ import FamilyIcon from "../assets/icons/family.png";
 import DoubleBedIcon from "../assets/icons/double-bed.png";
 import DogIcon from "../assets/icons/dog.png";
 import NoSmokingIcon from "../assets/icons/no-smoking.png";
+import PriceList from '../components/PriceList/PriceList';
 
 function Apartment() {
     return (
@@ -49,6 +50,7 @@ function Apartment() {
             <h2>Bildergalerie:</h2>
             <ImageGallery />
             <BulletList />  
+            <PriceList />
             <Footer />
         </div>
     )
