@@ -1,7 +1,7 @@
 import {
   Routes,
   Route,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 
 import './variables.css';
@@ -23,7 +23,7 @@ import DataPrivacy from "./pages/DataPrivacy";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Navigation />
         <Routes>
@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/impressum" element={<Imprint/>} />
           <Route exact path="/datenschutz" element={<DataPrivacy/>} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
