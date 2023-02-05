@@ -4,7 +4,7 @@
     height: 450px;
     display: block;
 
-    @media (min-width: 750px) {
+    @media (min-width: 850px) {
         height: 100%;
     }
 
@@ -27,7 +27,7 @@
     h2 {
         top: 110px;
         
-        @media (min-width: 750px) {
+        @media (min-width: 850px) {
             top: 15vw;
             width: 400px;
             left: calc(50% - 200px)
@@ -51,7 +51,7 @@
         pointer-events: none;
     }
 
-    @media (min-width: 750px) {
+    @media (min-width: 850px) {
         &:hover {
             &::after {
                 background-color: rgba(65, 48, 33, 0.3);
