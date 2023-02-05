@@ -1,6 +1,6 @@
 import './contentImage.css';
 
-function ContentImage({ imageMobile, imageDesktop}) {
+function ContentImage({ imageMobile, imageDesktop, alt}) {
     return (
         <picture className="content-image">
             {imageMobile &&
@@ -12,7 +12,7 @@ function ContentImage({ imageMobile, imageDesktop}) {
             <img
                 className="media--{id} image--{id}"
                 src={imageDesktop}
-                alt="Ferienwohnung Wieserhof in Tirol"
+                alt={alt ? alt : "Ferienwohnung Wieserhof in Tirol"}
             />
         </picture>
     )

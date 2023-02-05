@@ -1,6 +1,6 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import HeaderImage from "../assets/images/oetz-im-winter.jpg";
+import HeaderImage from "../assets/images/skigebiet-hochoetz.jpeg";
 
 function Oetztal() {
     return (
