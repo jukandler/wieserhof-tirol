@@ -1,22 +1,40 @@
 import emailjs from 'emailjs-com';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import MailIcon from "../../assets/icons/mail.png";
+import CheckIcon from "../../assets/icons/check.png";
 import { Link } from 'react-router-dom';
 
 import './form.css';
 
 function Form() {
+    const [status, setStatus] = useState("IDLE");
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setStatus("LOADING");
 
         emailjs.sendForm('service_kjixx1t', 'template_dw3596q', form.current, 'Pp1Soj9pjn2MCL4tq')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                setStatus("SUCCESS");
+                console.log(result.text);
+            }, (error) => {
+                setStatus("ERROR");
+                console.log(error.text);
+            });
     };
+
+    const getButtonContent =(status) => {
+        if (status === "ERROR") {
+            return "Fehler";
+        } else if (status === "LOADING") {
+            return "Bitte warten...";
+        } else if (status === "SUCCESS") {
+            return `<span><img src=${CheckIcon} alt="Haken"/></span>Anfrage gesendet!`;
+        } else {
+            return `<span><img src=${MailIcon} alt="Mail"/></span>Anfrage senden`;
+        }
+    }
 
     return (
         <form ref={form} onSubmit={sendEmail}>
@@ -79,7 +97,6 @@ function Form() {
                 ></textarea>
             </div>
             <div className="data-privacy">
-                {/* TODO: Link Datenschutz */}
                 <input
                     type="checkbox"
                     id="dataprivacy"
@@ -88,9 +105,10 @@ function Form() {
                 />
                 <label htmlFor="horns">Ja, ich akteptiere die <Link to="/datenschutz">Datenschutzerklärung</Link>*</label>
             </div>
-            <button type="submit" className="button button-primary">
-                Anfrage senden
+            <button type="submit" className="button button-primary" dangerouslySetInnerHTML={{__html: getButtonContent(status)}}>
             </button>
+            {status === "SUCCESS" && <b>Vielen Dank für Ihre Anfrage! Wir werden Sie so schnell wie möglich beantworten.</b>}
+            {status === "ERROR" && <b>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später nochmal.</b>}
         </form>
     )
 }
