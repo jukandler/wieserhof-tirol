@@ -65,7 +65,8 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
-
+        overflow: scroll;
+        
         .logo {
             position: absolute;
             left: calc(50% - 100px);

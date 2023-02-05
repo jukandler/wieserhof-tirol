@@ -41,7 +41,7 @@ function Navigation() {
                 </div>
             </div>
             { isOpen && <div className="navigation-menu">
-                <Logo />
+                <Logo onClick={closeMenu} />
                 <div className="navigation-menu__links">
                     <Link to="/" onClick={handleClick}>Startseite</Link>
                     <Link to="/ferienwohnung" onClick={handleClick}>Ferienwohnung</Link>

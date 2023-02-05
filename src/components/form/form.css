@@ -12,6 +12,7 @@ form {
 
         label {
             width: 30%;
+            font-size: 16px;
         }
 
         input,
@@ -19,6 +20,10 @@ form {
             box-sizing: border-box;
             font-family: "Montserrat";
             width: 60%;
+            background: white;
+            border: 1px solid var(--color-accent);
+            color: var(--color-text);
+            font-size: 16px;
 
             &:focus { 
                 outline: none !important;

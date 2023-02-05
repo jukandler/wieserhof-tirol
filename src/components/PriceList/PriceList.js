@@ -53,8 +53,8 @@ function PriceList() {
                     </tr>
                 </tbody>
             </table>
-            <p>zzgl. <b>Ortstaxe:</b> 3,50€ pro Person und Nacht (ab dem 15. Lebensjahr). Ab dem 1.11.2023 erhöht sich die Ortstaxe auf 4€.</p>
             <p><b>Jede weitere Person</b> wird mit 25€ pro Nacht berechnet (Belegung bis max. 6 Personen).</p>
+            <p>zzgl. <b>Ortstaxe:</b> 3,50€ pro Person und Nacht (ab dem 15. Lebensjahr). Ab dem 1.11.2023 erhöht sich die Ortstaxe auf 4€.</p>
             <p><b>Haustiere</b> sind bei uns herzlich willkommen und werden mit 15€ pro Nacht berechnet.</p>
             <p>Der <b>Mindestaufenthalt</b> variiert je nach Saison - bitte um Anfrage des gewünschten Termins. Wir erlauben uns, für besonders kurze Aufenthalte (weniger als 3 Nächte) einen Aufschlag von 20% des Basispreises zu berechnen.</p>
             <b>Check-In: ab 15:00 Uhr<br></br>Check-Out: bis 10:00 Uhr</b>

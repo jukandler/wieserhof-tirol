@@ -11,6 +11,8 @@
 
         td,
         th {
+            border-color: var(--color-text);
+            border-width: 1px;
             vertical-align: top;
             border-style: solid;
             padding: 10px;
