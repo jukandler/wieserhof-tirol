@@ -17,6 +17,8 @@ function Navigation() {
 
     const handleClick = () => setIsOpen(!isOpen);
 
+    const closeMenu = () => setIsOpen(false);
+
     return (
         <nav>
             <div className="navbar-icon" onClick={handleClick}>
@@ -25,13 +27,13 @@ function Navigation() {
             <div className="sticky-navbar">
                 <div className="action-icons grid-text_wide">
                     <Link to="/anfahrt">
-                        <img src={PinIcon} alt="Anfahrt"/>
+                        <img src={PinIcon} onClick={closeMenu} alt="Anfahrt"/>
                     </Link>
                     <a href="tel:+4369910553435">
                         <img src={CallIcon} alt="Anrufen"/>
                     </a>
                     <Link to="/anfrage">
-                        <img src={MailIcon} alt="E-Mail schicken"/>
+                        <img src={MailIcon} onClick={closeMenu} alt="E-Mail schicken"/>
                     </Link>
                     <a href="https://wa.me/4369910553435" target="_blank" rel="noopener noreferrer">
                         <img src={WhatsappIcon} alt="Whatsapp schicken"/>
@@ -44,9 +46,9 @@ function Navigation() {
                     <Link to="/" onClick={handleClick}>Startseite</Link>
                     <Link to="/ferienwohnung" onClick={handleClick}>Ferienwohnung</Link>
                     <Link to="/wieserhof" onClick={handleClick}>Der Wieserhof</Link>
-                    <Link to="/oetztal" onClick={handleClick}>Natur und Aktiv</Link>
+                    <Link to="/oetztal" onClick={handleClick}>Das Ötztal</Link>
                     <Link to="/anfahrt" onClick={handleClick}>Anfahrt</Link>
-                    <Link to="/anfrage" onClick={handleClick}>Anfrage</Link>
+                    <Link to="/anfrage" onClick={handleClick}>Anfrage senden</Link>
                 </div>
             </div>}
         </nav>
