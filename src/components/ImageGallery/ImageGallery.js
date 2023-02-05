@@ -134,13 +134,24 @@ const images = [
 ];
 
 function ImageGallery() {
+    const handleScreenChange = (isFullscreen) => {
+        const stickyNavbar = document.querySelector(".sticky-navbar");
+        if (isFullscreen) {
+            stickyNavbar.style.display = "none";
+        } else {
+            stickyNavbar.style.display = "block";
+        }
+    }
+    
     return (
         <div className="wieserhof-gallery grid-expanded">
             <Gallery
                 items={images}
                 showBullets={window.matchMedia('(min-width: 750px)').matches}
                 showIndex={true}
-                showPlayButton={false}/>
+                showPlayButton={false}
+                onScreenChange={handleScreenChange}
+                />
         </div>
     );
 }
