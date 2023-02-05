@@ -2,8 +2,8 @@ import "./priceList.css"
 
 function PriceList() {
     return (
-        <div className="price-list grid-text_wide">
-            <h2>Preise Saison 2022/23</h2>
+        <div className="price-list grid-text_wide" style={{marginBottom: "60px"}}>
+            <h2>Preise</h2>
             <table>
                 <thead>
                     <tr>
@@ -57,6 +57,7 @@ function PriceList() {
             <p><b>Jede weitere Person</b> wird mit 25€ pro Nacht berechnet (Belegung bis max. 6 Personen).</p>
             <p><b>Haustiere</b> sind bei uns herzlich willkommen und werden mit 15€ pro Nacht berechnet.</p>
             <p>Der <b>Mindestaufenthalt</b> variiert je nach Saison - bitte um Anfrage des gewünschten Termins. Wir erlauben uns, für besonders kurze Aufenthalte (weniger als 3 Nächte) einen Aufschlag von 20% des Basispreises zu berechnen.</p>
+            <b>Check-In: ab 15:00 Uhr<br></br>Check-Out: bis 10:00 Uhr</b>
         </div>
     )
 }

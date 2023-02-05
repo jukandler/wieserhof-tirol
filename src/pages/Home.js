@@ -12,6 +12,7 @@ function Home() {
             <section className="grid-text_wide" style={{ margin: "60px auto" }}>
                 <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom Skigebiet entfernt.</h3>
                 <p>Herzlich Willkommen am Bergbauernhof Wieserhof in Oetz in Tirol! Der Wieserhof befindet sich in Alleinlage auf ca. 1.100 m Seehöhe abseits von jeglichem Verkehr und ist der ideale Urlaubsort für Ruhesuchende, Naturliebhaber und Familien.</p>
+                <div className="divider space-bottom"></div>
             </section>
             <SplitTiles
                 linkTo="/ferienwohnung"
@@ -37,6 +38,7 @@ function Home() {
                 reverse={true}
             />
             <section className="grid-text_wide">
+                <div className="divider space-top"></div>
                 <h2>Ihre Gastgeber</h2>
                 <p className="quote">
                     Mit viel Leidenschaft betreiben wir einen Bergbauernhof im vorderen Oetztal auf 1100 m mit Ziegenhaltung, Pferden & Ponys und Kleintieren. Im Jahr 2022 haben wir uns entschlossen, eine exklusive Ferienwohnung auf unserem Hof zu errichten. Die Umsetzung ist uns dann auch unter viel Beigabe von Herzblut und in die Liebe zu den Details erfreulich gut gelungen. Wir freuen uns jetzt auf viele nette Gäste, mit denen wir die Vorteile von unserem Hof in Alleinlage teilen dürfen!

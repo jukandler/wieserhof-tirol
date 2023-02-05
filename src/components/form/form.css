@@ -44,6 +44,7 @@ form {
 }
 
 .button-primary {
+    margin: 0 auto;
     cursor: pointer;
     display: block;
     border: none;

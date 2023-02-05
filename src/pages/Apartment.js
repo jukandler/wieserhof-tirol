@@ -11,6 +11,7 @@ import DoubleBedIcon from "../assets/icons/double-bed.png";
 import DogIcon from "../assets/icons/dog.png";
 import NoSmokingIcon from "../assets/icons/no-smoking.png";
 import PriceList from '../components/PriceList/PriceList';
+import { Link } from 'react-router-dom';
 
 function Apartment() {
     return (
@@ -43,7 +44,7 @@ function Apartment() {
             <div className="grid-text_wide">
                 <p>Unser Highlight ist das moderne, große Badezimmer mit freistehender Badewanne, Dusche mit integrierter Regendusche und WC; genießen Sie einen traumhaften Ausblick von unserem möblierten Balkon; unser herrlicher Garten mit Kinderspielplatz darf gerne mitbenützt werden. Weiters befinden sich rund um das Haus und das Wirtschaftsgebäude ca. 3 Hektar Wiesen, die in unserem Besitz sind.</p>
             </div>
-            <ContentImage imageDesktop={bad}/>
+            <ContentImage imageDesktop={bad} alt={"Ferienwohnung Wieserhof in Tirol"}/>
             <div className="grid-text_wide">
                 <p>Im Obergeschoss befindet sich ein weiteres Schlafzimmer mit einem Doppelbett und zwei weiteren getrennten Betten (Achtung Dachschräge) </p>
             </div>
@@ -51,6 +52,7 @@ function Apartment() {
             <ImageGallery />
             <BulletList />  
             <PriceList />
+            <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
     )

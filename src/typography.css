@@ -69,3 +69,23 @@ a {
   text-decoration: none;
   color: var(--color-accent);
 }
+
+.divider {
+  width: 100px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 0 auto;
+  
+  @media (min-width: 750px) {
+    width: 300px;
+  }
+
+  &.space-top {
+    margin-top: 80px;
+  }
+
+  &.space-bottom {
+    margin-bottom: 80px;
+  } 
+
+}
