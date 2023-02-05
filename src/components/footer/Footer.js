@@ -34,7 +34,10 @@ function Footer() {
             <a className="oetztal-logo" href="https://www.oetztal.com/de/" target="_blank" rel="noopener noreferrer">
                 <img src={OetztalLogo} alt="Logo Ötztal" style={{width: "75px", margin: "10px 0"}} loading="lazy"/>
             </a>
-            <Link to="/impressum" className="link-imprint">Impressum</Link>
+            <div className="links-bottom">
+                <Link to="/impressum" className="link-imprint">Impressum</Link>
+                <Link to="/datenschutz" className="link-dataprivacy">Datenschutz</Link>
+            </div>
         </footer>
     )
 }

@@ -17,12 +17,19 @@ footer {
         }
     }
 
+    .links-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
     a {
         color: white;
         text-decoration: underline;
 
-        &.link-imprint {
+        &.link-imprint,
+        &.link-dataprivacy {
             text-decoration: none;
+            margin: 0 10px;
         }
     }
 
