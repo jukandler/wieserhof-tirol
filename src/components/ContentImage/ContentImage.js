@@ -10,9 +10,9 @@ function ContentImage({ imageMobile, imageDesktop, alt}) {
                 />
             }
             <img
-                className="media--{id} image--{id}"
                 src={imageDesktop}
                 alt={alt ? alt : "Ferienwohnung Wieserhof in Tirol"}
+                loading="lazy"
             />
         </picture>
     )

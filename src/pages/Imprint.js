@@ -1,11 +1,10 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import HeaderImage from "../assets/images/balkon-view.jpg";
 
 function Imprint() {
     return (
         <div id="imprint">
-            <Header title="Impressum" image={HeaderImage} />
+            <Header title="Impressum"/>
             <div className="grid-text_wide">
                 <section className="no-margin">
                     <h2>Inhaber und verantwortlich für den Inhalt:</h2>

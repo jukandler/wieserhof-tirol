@@ -22,17 +22,17 @@ function Footer() {
                     href="https://www.facebook.com/people/Wieserhof-Tirol/100088885545237/"
                     target="_blank"
                     rel="noopener noreferrer">
-                        <img className="facebook-logo" src={IconFacebook} alt="facebook logo"></img>
+                        <img className="facebook-logo" src={IconFacebook} alt="facebook logo" loading="lazy"/>
                 </a>
                 <a 
                     href="https://www.instagram.com/wieserhof_tirol/"
                     target="_blank"
                     rel="noopener noreferrer">
-                        <img className="instagram-logo" src={IconInstagram} alt="instagram logo"></img>
+                        <img className="instagram-logo" src={IconInstagram} alt="instagram logo" loading="lazy"/>
                 </a>
             </div>
             <a className="oetztal-logo" href="https://www.oetztal.com/de/" target="_blank" rel="noopener noreferrer">
-                <img src={OetztalLogo} alt="Logo Ötztal" style={{width: "75px", margin: "10px 0"}} />
+                <img src={OetztalLogo} alt="Logo Ötztal" style={{width: "75px", margin: "10px 0"}} loading="lazy"/>
             </a>
             <Link to="/impressum" className="link-imprint">Impressum</Link>
         </footer>

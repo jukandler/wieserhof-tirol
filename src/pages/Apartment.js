@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 function Apartment() {
     return (
         <div id="apartment">
-            <Header title="Unsere exklusive Ferienwohnung" image={HeaderImage} />
+            <Header title="Unsere exklusive Ferienwohnung" image={HeaderImage} alt="Bild Ferienwohnung Wohnraum"/>
             <div className="grid-text_wide">
                 <h3>Eingerichtet mit viel Liebe zum Detail: Luxus und Gemütlichkeit auf 85 m²</h3>
                 <p>Das Herzstück des Appartements bildet ein großer, gemütlicher und offener Wohnraum mit einer vollausgestatteten Küche mit Essbereich und beheiztem Bauernofen für kuschelige Tage. In diesem Wohnraum befindet sich auch ein großes Doppelbett mit Zugang zum begehbaren Schrank.</p>

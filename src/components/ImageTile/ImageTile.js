@@ -7,9 +7,9 @@ function ImageTile({ image, title, linkTo}) {
             <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
             <picture>
                 <img
-                    className="media--{id} image--{id}"
                     src={image}
                     alt={title}
+                    loading="lazy"
                 />
             </picture>
             <p>mehr erfahren</p>
