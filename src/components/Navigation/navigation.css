@@ -66,7 +66,7 @@ nav {
         flex-direction: row;
         justify-content: center;
         overflow: scroll;
-        
+
         .logo {
             position: absolute;
             left: calc(50% - 100px);
@@ -87,10 +87,10 @@ nav {
 
         a {
             font-family: "CrimsonPro";
-            font-size: 30px;
+            font-size: 28px;
             color: white;
             display: block;
-            margin: 25px 0;
+            margin: 20px 0;
             text-align: center;
             
             @media (min-width: 750px) {

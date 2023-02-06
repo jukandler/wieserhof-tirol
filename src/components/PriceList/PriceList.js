@@ -3,7 +3,7 @@ import "./priceList.css"
 function PriceList() {
     return (
         <div className="price-list grid-text_wide" style={{marginBottom: "60px"}}>
-            <h2>Preise</h2>
+            <h2>Preise der aktuellen Saison</h2>
             <table>
                 <thead>
                     <tr>
@@ -57,7 +57,9 @@ function PriceList() {
             <p>zzgl. <b>Ortstaxe:</b> 3,50€ pro Person und Nacht (ab dem 15. Lebensjahr). Ab dem 1.11.2023 erhöht sich die Ortstaxe auf 4€.</p>
             <p><b>Haustiere</b> sind bei uns herzlich willkommen und werden mit 15€ pro Nacht berechnet.</p>
             <p>Der <b>Mindestaufenthalt</b> variiert je nach Saison - bitte um Anfrage des gewünschten Termins. Wir erlauben uns, für besonders kurze Aufenthalte (weniger als 3 Nächte) einen Aufschlag von 20% des Basispreises zu berechnen.</p>
+            <p>Die <b>Endreinigung</b> für die Ferienwohnung ist in den angeführten Preisen bereits enthalten.</p>
             <b>Check-In: ab 15:00 Uhr<br></br>Check-Out: bis 10:00 Uhr</b>
+            <p>Die Angaben sind ohne Gewähr, es sind ausschließlich die Preise der Buchungsbestätigung ausschlaggebend. Buchungen sind nur verbindlich, wenn sie durch uns bestätigt werden.</p>
         </div>
     )
 }

@@ -10,7 +10,6 @@ import FamilyIcon from "../assets/icons/family.png";
 import DoubleBedIcon from "../assets/icons/double-bed.png";
 import DogIcon from "../assets/icons/dog.png";
 import NoSmokingIcon from "../assets/icons/no-smoking.png";
-import PriceList from '../components/PriceList/PriceList';
 import { Link } from 'react-router-dom';
 
 function Apartment() {
@@ -51,7 +50,6 @@ function Apartment() {
             <h2>Bildergalerie:</h2>
             <ImageGallery />
             <BulletList />  
-            <PriceList />
             <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
