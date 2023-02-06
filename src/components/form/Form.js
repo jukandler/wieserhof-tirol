@@ -48,6 +48,16 @@ function Form() {
                 />
             </div>
             <div className="form-group">
+                <label htmlFor="reply_to">E-Mail Adresse*</label>
+                <input
+                    type="email"
+                    name="reply_to"
+                    className="form-control"
+                    id="reply_to"
+                    required
+                />
+            </div>
+            <div className="form-group">
                 <label htmlFor="date_arrival">Anreise*</label>
                 <input
                     type="date"
@@ -68,22 +78,22 @@ function Form() {
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="number_of_guests">Anzahl Personen*</label>
+                <label htmlFor="number_of_adults">Anzahl Erwachsene*</label>
                 <input
                     type="number"
-                    name="number_of_guests"
+                    name="number_of_adults"
                     className="form-control"
-                    id="number_of_guests"
+                    id="number_of_adults"
                     required
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="reply_to">E-Mail Adresse*</label>
+                <label htmlFor="number_of_children">Anzahl Kinder*</label>
                 <input
-                    type="email"
-                    name="reply_to"
+                    type="number"
+                    name="number_of_children"
                     className="form-control"
-                    id="reply_to"
+                    id="number_of_children"
                     required
                 />
             </div>
