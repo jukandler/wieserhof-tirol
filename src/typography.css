@@ -1,0 +1,91 @@
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 28px;
+
+  @media (min-width: 750px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin-bottom: 40px;
+
+  &.quote {
+    font-family: "CrimsonProItalic";
+  }
+}
+
+.no-margin p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-family: "CrimsonProLight";
+  color: var(--color-accent);
+  text-align: center;
+  font-size: 36px;
+  line-height: 50px;
+  text-transform: uppercase;
+  
+  @media (min-width: 750px) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-family: "CrimsonProLight";
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: 28px;
+  margin-top: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  @media (min-width: 750px) {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "MontserratSemiBold";
+  color: var(--color-accent);
+
+  @media (min-width: 750px) {
+    font-size: 22px;
+  }
+}
+
+b {
+  font-family: "MontserratSemiBold";
+}
+
+a {
+  font-family: "MontserratSemiBold";
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.divider {
+  width: 100px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 0 auto;
+  
+  @media (min-width: 750px) {
+    width: 300px;
+  }
+
+  &.space-top {
+    margin-top: 80px;
+  }
+
+  &.space-bottom {
+    margin-bottom: 80px;
+  } 
+
+}

@@ -134,6 +134,7 @@ module.exports = function (webpackEnv) {
             plugins: !useTailwind
               ? [
                   'postcss-nested',
+                  'postcss-custom-properties',
                   'postcss-flexbugs-fixes',
                   [
                     'postcss-preset-env',

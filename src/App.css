@@ -1,104 +1,10 @@
-@font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans"),
-  url("./fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: local("OpenSansBold"),
-  url("./fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3,
-a {
-  color: #1a6074;
-  text-decoration: none;
-}
-
-h1 {
-  font-family: "OpenSansBold";
-}
-
-h2,
-h3,
-b {
-  font-family: "OpenSansSemiBold";
-}
-
-.App {
-  font-family: "OpenSans";
-  text-align: center;
-  background-color: aliceblue;
-  color: #2e2e2e;
-  min-height: 100vh;
-  box-sizing: border-box; 
-}
-
 .grid-text_wide {
   max-width: min(648px, calc(100% - (2 * 25px)));
   margin: 0 auto;
 }
 
-.action-buttons {
-  width: 180px;
-  height: 50px;
-  display: flex;
+.grid-expanded {
+  max-width: 912px;
   margin: 0 auto;
-  justify-content: space-between;
-
-  img {
-    width: 40px;
-    height: 40px;
-    transition: width 0.2s, height 0.2s;
-  }
-
-  a:hover img {
-    width: 45px;
-    height: 45px;
-  }
-}
-
-
-.contact {
-  background: white;
-  padding: 10px 30px;
-  border-radius: 20px;
-  margin: 40px auto;
-  box-shadow: 10px 10px 20px -20px #2e2e2e;
-
-  p {
-    margin-bottom: 5px;
-  }
-
-  @media (min-width: 750px) {
-    padding: 15px 65px;
-    width: fit-content;
-  }
-}
-
-#imprint {
-  section {
-    margin-top: 40px;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &.align-left p {
-      text-align: justify;
-    }
-  }
 }
 
