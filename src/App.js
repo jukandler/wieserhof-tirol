@@ -1,7 +1,7 @@
 import {
   Routes,
   Route,
-  BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 
 import './variables.css';
@@ -24,7 +24,7 @@ import Prices from "./pages/Prices";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Navigation />
         <Routes>
@@ -38,7 +38,7 @@ function App() {
           <Route exact path="/impressum" element={<Imprint/>} />
           <Route exact path="/datenschutz" element={<DataPrivacy/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
