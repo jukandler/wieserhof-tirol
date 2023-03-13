@@ -20,14 +20,16 @@ import Anfahrt from "./pages/Anfahrt";
 import Contact from "./pages/Contact";
 import DataPrivacy from "./pages/DataPrivacy";
 import Prices from "./pages/Prices";
+import CatchAllRoute from "./BuilderComponent";
 
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={process.env.PUBLIC_URL}>
-        <ScrollToTop />
+      {/* <HashRouter basename={process.env.PUBLIC_URL}> */}
+        {/* <ScrollToTop /> */}
         <Navigation />
-        <Routes>
+        <CatchAllRoute />
+        {/* <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/ferienwohnung" element={<Apartment/>} />
           <Route exact path="/wieserhof" element={<Wieserhof/>} />
@@ -37,8 +39,9 @@ function App() {
           <Route exact path="/preise" element={<Prices/>} />
           <Route exact path="/impressum" element={<Imprint/>} />
           <Route exact path="/datenschutz" element={<DataPrivacy/>} />
-        </Routes>
-      </HashRouter>
+          <Route path='*' element={<CatchAllRoute />}/>
+        </Routes> */}
+      {/* </HashRouter> */}
     </div>
   );
 }

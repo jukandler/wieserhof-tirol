@@ -35,8 +35,8 @@ function Footer() {
                 <img src={OetztalLogo} alt="Logo Ötztal" style={{width: "75px", margin: "10px 0"}} loading="lazy"/>
             </a>
             <div className="links-bottom">
-                <Link to="/impressum" className="link-imprint">Impressum</Link>
-                <Link to="/datenschutz" className="link-dataprivacy">Datenschutz</Link>
+                <a href="/impressum" className="link-imprint">Impressum</a>
+                <a href="/datenschutz" className="link-dataprivacy">Datenschutz</a>
             </div>
         </footer>
     )

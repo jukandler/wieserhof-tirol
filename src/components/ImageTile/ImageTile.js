@@ -3,7 +3,7 @@ import './imageTile.css';
 
 function ImageTile({ image, title, linkTo}) {
     return (
-        <Link to={linkTo} className="image-tile">
+        <a href={linkTo} className="image-tile">
             <h2 dangerouslySetInnerHTML={{__html: title}}></h2>
             <picture>
                 <img
@@ -13,7 +13,7 @@ function ImageTile({ image, title, linkTo}) {
                 />
             </picture>
             <p>mehr erfahren</p>
-        </Link>
+        </a>
     )
 }
 

@@ -2,7 +2,6 @@ import emailjs from 'emailjs-com';
 import { useRef, useState } from 'react';
 import MailIcon from "../../assets/icons/mail.png";
 import CheckIcon from "../../assets/icons/check.png";
-import { Link } from 'react-router-dom';
 
 import './form.css';
 
@@ -113,7 +112,7 @@ function Form() {
                     name="dataprivacy"
                     required
                 />
-                <label htmlFor="horns">Ja, ich akteptiere die <Link to="/datenschutz">Datenschutzerklärung</Link>*</label>
+                <label htmlFor="horns">Ja, ich akteptiere die <a href="https://www.wieserhof-tirol.at/datenschutz">Datenschutzerklärung</a>*</label>
             </div>
             <button type="submit" className="button button-primary" dangerouslySetInnerHTML={{__html: getButtonContent(status)}}>
             </button>
