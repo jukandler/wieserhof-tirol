@@ -4,7 +4,10 @@ header.hero {
     h1 {
         position: absolute;
         top: 240px;
-        color: var(--color-primary);
+        /* summer */
+        color: white;
+        /* winter */
+        /* color: var(--color-primary); */
         text-align: center;
         width: 100%;
 
