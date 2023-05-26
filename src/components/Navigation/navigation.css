@@ -70,7 +70,7 @@ nav {
         .logo {
             position: absolute;
             left: calc(50% - 100px);
-            top: 100px;
+            top: 80px;
 
             @media (min-width: 750px) {
                 left: calc(50% - 150px);

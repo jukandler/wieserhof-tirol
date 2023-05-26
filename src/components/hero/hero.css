@@ -3,7 +3,7 @@ header.hero {
 
     h1 {
         position: absolute;
-        top: 240px;
+        top: 175px;
         /* summer */
         color: white;
         /* winter */
@@ -12,7 +12,7 @@ header.hero {
         width: 100%;
 
         @media (min-width: 750px) {
-            top: 280px;
+            top: 260px;
         }
     }
 
@@ -24,7 +24,7 @@ header.hero {
 
     .logo-container {
         position: absolute;
-        top: 100px;
+        top: 80px;
         left: calc(50% - 100px);
         
         @media (min-width: 750px) {
