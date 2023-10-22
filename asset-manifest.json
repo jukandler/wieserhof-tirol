@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.359b731e.css",
-    "main.js": "/static/js/main.ceba3578.js",
+    "main.css": "/static/css/main.47d8b376.css",
+    "main.js": "/static/js/main.25f21332.js",
     "static/js/787.5c39024c.chunk.js": "/static/js/787.5c39024c.chunk.js",
     "static/media/wohnraum.jpg": "/static/media/wohnraum.4a5b2258fe93a341c6cb.jpg",
     "static/media/oetz-im-sommer.jpg": "/static/media/oetz-im-sommer.714ccbbf635499fa6161.jpg",
@@ -41,12 +41,12 @@
     "static/media/oetz-im-sommer_mob.avif": "/static/media/oetz-im-sommer_mob.9494a8e538bd42aca3fb.avif",
     "static/media/ansicht-traumbad-1.jpeg": "/static/media/ansicht-traumbad-1.327d795978a4130b1eac.jpeg",
     "index.html": "/index.html",
-    "main.359b731e.css.map": "/static/css/main.359b731e.css.map",
-    "main.ceba3578.js.map": "/static/js/main.ceba3578.js.map",
+    "main.47d8b376.css.map": "/static/css/main.47d8b376.css.map",
+    "main.25f21332.js.map": "/static/js/main.25f21332.js.map",
     "787.5c39024c.chunk.js.map": "/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.359b731e.css",
-    "static/js/main.ceba3578.js"
+    "static/css/main.47d8b376.css",
+    "static/js/main.25f21332.js"
   ]
 }
