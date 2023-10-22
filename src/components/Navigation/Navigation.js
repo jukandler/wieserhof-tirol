@@ -2,7 +2,7 @@ import './navigation.css';
 import PinIcon from "../../assets/icons/pin.png";
 import CallIcon from "../../assets/icons/call.png";
 import MailIcon from "../../assets/icons/mail.png";
-import WhatsappIcon from "../../assets/icons/whatsapp.png";
+import CalendarIcon from "../../assets/icons/calendar.png";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
@@ -35,9 +35,9 @@ function Navigation() {
                     <Link to="/anfrage">
                         <img src={MailIcon} onClick={closeMenu} alt="E-Mail schicken"/>
                     </Link>
-                    <a href="https://wa.me/4369910553435" target="_blank" rel="noopener noreferrer">
-                        <img src={WhatsappIcon} alt="Whatsapp schicken"/>
-                    </a>
+                    <Link to="/buchung">
+                        <img src={CalendarIcon} onClick={closeMenu} alt="Buchung"/>
+                    </Link>
                 </div>
             </div>
             { isOpen && <div className="navigation-menu">
