@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "CrimsonProLight";
+  src: local("CrimsonProLight"),
+  url("./fonts/CrimsonPro/CrimsonPro-Light.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CrimsonProItalic";
+  src: local("CrimsonProItalic"),
+  url("./fonts/CrimsonPro/CrimsonPro-Italic.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+  url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: local("MontserratSemiBold"),
+  url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}

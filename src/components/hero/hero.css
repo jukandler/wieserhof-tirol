@@ -1,0 +1,34 @@
+header.hero {
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 175px;
+        /* summer */
+        color: white;
+        /* winter */
+        /* color: var(--color-primary); */
+        text-align: center;
+        width: 100%;
+
+        @media (min-width: 750px) {
+            top: 260px;
+        }
+    }
+
+    picture img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .logo-container {
+        position: absolute;
+        top: 80px;
+        left: calc(50% - 100px);
+        
+        @media (min-width: 750px) {
+            left: calc(50% - 150px);
+        }
+    }
+}

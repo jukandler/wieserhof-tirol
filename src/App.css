@@ -1,0 +1,10 @@
+.grid-text_wide {
+  max-width: min(648px, calc(100% - (2 * 25px)));
+  margin: 0 auto;
+}
+
+.grid-expanded {
+  max-width: 912px;
+  margin: 0 auto;
+}
+
