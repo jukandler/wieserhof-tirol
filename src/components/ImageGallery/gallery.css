@@ -1,4 +1,4 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url("react-image-gallery/styles/css/image-gallery.css");
 
 .wieserhof-gallery {
     margin-bottom: 60px;
