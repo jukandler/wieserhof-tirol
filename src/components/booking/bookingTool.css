@@ -1,0 +1,21 @@
+.booking-tool {
+    background: white;
+    border: 2px solid var(--color-accent);
+    min-height: 300px;
+    position: relative;
+
+    @media (max-width: 750px) {
+        .kbe-card.kbe-room-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    .bf-button.bf-button-primary,
+    .kbe-card-button,
+    .kbe-card-button:hover {
+        background: var(--color-secondary);
+        color: white;
+    }
+}
