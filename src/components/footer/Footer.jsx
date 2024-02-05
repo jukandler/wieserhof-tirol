@@ -8,6 +8,7 @@ import OetztalLogo from "../../assets/images/logo-oetztal.jpg"
 import TirolLogo from "../../assets/images/logo-tirol.jpg"
 
 import './footer.css';
+import BookingEmbed from "../booking/BookingEmbed";
 
 function Footer() {
     return (
@@ -32,6 +33,7 @@ function Footer() {
                         <img className="instagram-logo" src={IconInstagram} alt="instagram logo" loading="lazy"/>
                 </a>
             </div>
+            <BookingEmbed />
             <a className="tirol-logo" href="" target="_blank" rel="noopener noreferrer">
                 <img src={TirolLogo} alt="Logo Tirol" style={{width: "150px", margin: "10px 0"}} loading="lazy"/>
             </a>
