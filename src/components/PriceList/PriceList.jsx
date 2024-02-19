@@ -48,7 +48,7 @@ function PriceList() {
                                 01.02.2025 - 07.03.2025
                             </span>
                         </td>
-                        <td>300€</td>
+                        <td>320€</td>
                     </tr>
                 </tbody>
             </table>
