@@ -7,10 +7,10 @@ function MenuToCloseIcon({ color = "#6A5744", isOpen}) {
                 <title>menu to close</title>
                 <g strokeMiterlimit="10" fill="none" stroke={color}>
                     <g className={`menu-to-close ${isOpen ? "state-b" : ""}`}>
-                <line strokeLinecap="square" strokeWidth="2" x1="2" x2="30" y1="9" y2="9" strokeLinejoin="miter"></line>
-                <line stroke={color} strokeLinecap="square" strokeWidth="2" x1="30" x2="2" y1="23" y2="23" strokeLinejoin="miter"></line>
-                <line strokeLinecap="square" strokeWidth="2" x1="30" x2="2" y1="16" y2="16" strokeLinejoin="miter"></line>
-                <line stroke={color} strokeLinecap="square" strokeWidth="2" x1="30" x2="2" y1="16" y2="16" strokeLinejoin="miter"></line></g>
+                <line strokeLinecap="square" strokeWidth="3" x1="2" x2="30" y1="9" y2="9" strokeLinejoin="miter"></line>
+                <line stroke={color} strokeLinecap="square" strokeWidth="3" x1="30" x2="2" y1="23" y2="23" strokeLinejoin="miter"></line>
+                <line strokeLinecap="square" strokeWidth="3" x1="30" x2="2" y1="16" y2="16" strokeLinejoin="miter"></line>
+                <line stroke={color} strokeLinecap="square" strokeWidth="3" x1="30" x2="2" y1="16" y2="16" strokeLinejoin="miter"></line></g>
                 </g>
             </svg>
         </div>
