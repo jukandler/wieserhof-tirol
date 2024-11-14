@@ -1,10 +1,10 @@
 import Logo from "../Logo/Logo";
-import HeroMobile from "../../assets/images/ochs_brandsee_mob.jpg"
-import HeroMobileWebp from "../../assets/images/ochs_brandsee_mob.webp"
-import HeroMobileAvif from "../../assets/images/ochs_brandsee_mob.avif"
-import HeroDesktop from "../../assets/images/ochs_brandsee.jpg"
-import HeroDesktopWebp from "../../assets/images/ochs_brandsee.webp"
-import HeroDesktopAvif from "../../assets/images/ochs_brandsee.avif"
+import HeroMobile from "../../assets/images/oetz-im-winter-2_mob.jpg"
+import HeroMobileWebp from "../../assets/images/oetz-im-winter-2_mob.webp"
+import HeroMobileAvif from "../../assets/images/oetz-im-winter-2_mob.avif"
+import HeroDesktop from "../../assets/images/oetz-im-winter-2.jpg"
+import HeroDesktopWebp from "../../assets/images/oetz-im-winter-2.webp"
+import HeroDesktopAvif from "../../assets/images/oetz-im-winter-2.avif"
 
 import './hero.css';
 
