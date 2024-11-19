@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/oetztal" element={<Oetztal/>} />
           <Route exact path="/anfahrt" element={<Anfahrt/>} />
           <Route exact path="/anfrage" element={<Contact/>} />
-          <Route exact path="/preise" element={<Prices/>} />
+          {/* <Route exact path="/preise" element={<Prices/>} /> */}
           <Route exact path="/buchung" element={<Booking/>} />
           <Route exact path="/impressum" element={<Imprint/>} />
           <Route exact path="/datenschutz" element={<DataPrivacy/>} />
