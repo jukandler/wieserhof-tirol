@@ -37,7 +37,7 @@ header.hero {
         object-fit: cover;
         object-position: bottom;
 
-        @media (min-width: 1550px) {
+        @media (min-width: 1800px) {
             object-position: unset;
         }
     }
