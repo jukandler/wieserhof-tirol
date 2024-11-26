@@ -48,20 +48,23 @@ function Hero() {
     return (
         <header className="hero">
             {images.map((image, index) => (
-                <picture key={index} className={`image ${index === currentIndex ? "active" : ""}`}>
-                    <source media="(min-width: 750px)" srcSet={image.desktopAvif} type="image/avif"/>
-                    <source media="(min-width: 750px)" srcSet={image.desktopWebp} type="image/webp"/>
-                    <source media="(min-width: 750px)" srcSet={image.desktopJpg}/>
-                    <source srcSet={image.mobileAvif} type="image/avif"/>
-                    <source srcSet={image.mobileWebp} type="image/webp"/>
-                    <source srcSet={image.mobileJpg}/>
-                    <img 
-                        src={image.desktopJpg}
-                        loading="eager"
-                        decoding="sync"
-                        alt="Wieserhof mit Blick ins Ötztal"
-                    /> 
-                </picture>
+                <div key={index}>
+                    <div className={`blur-background ${index === currentIndex ? "active" : ""}`} style={{backgroundImage: `url(${image.desktopJpg})`}}></div>
+                    <picture key={index} className={`image ${index === currentIndex ? "active" : ""}`}>
+                        <source media="(min-width: 750px)" srcSet={image.desktopAvif} type="image/avif"/>
+                        <source media="(min-width: 750px)" srcSet={image.desktopWebp} type="image/webp"/>
+                        <source media="(min-width: 750px)" srcSet={image.desktopJpg}/>
+                        <source srcSet={image.mobileAvif} type="image/avif"/>
+                        <source srcSet={image.mobileWebp} type="image/webp"/>
+                        <source srcSet={image.mobileJpg}/>
+                        <img 
+                            src={image.desktopJpg}
+                            loading="eager"
+                            decoding="sync"
+                            alt="Wieserhof mit Blick ins Ötztal"
+                        /> 
+                    </picture>
+                </div>
             ))}
             <h1>Willkommen<br></br>auf dem Wieserhof</h1>
             <div className="logo-container">
