@@ -14,6 +14,7 @@ import HeroDesktopAvif2 from "../../assets/images/ochs_brandsee.avif";
 
 import './hero.css';
 import { useEffect, useState } from "react";
+import FreeSlots from "../freeSlots/FreeSlots";
 
 function Hero() {
 
@@ -70,6 +71,7 @@ function Hero() {
             <div className="logo-container">
                 <Logo />
             </div>
+            <FreeSlots />
         </header>
     )
 }

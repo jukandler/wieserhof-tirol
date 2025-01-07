@@ -1,0 +1,25 @@
+.free-slots {
+    background: var(--color-primary);
+    position: absolute;
+    border: 2px solid var(--color-secondary);
+    padding: 12px;
+    color: var(--color-accent);
+    border-radius: 5px;
+    bottom: 50px;
+    right: 12px;
+    transform: rotate(5deg);
+    opacity: 0.9;
+    width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+
+    h4 {
+        margin: 0 0 10px;
+    }
+
+    @media (min-width: 475px) and (min-height: 725px) {
+        transform: none;
+        right: calc(50% - 110px);
+        bottom: 65px;
+    }
+}
