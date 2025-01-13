@@ -5,8 +5,8 @@ function FreeSlots() {
     const [slots, setSlots] = useState(null);
 
     useEffect(() => {
-        const apiKey = process.env.REACT_APP_SPREADSHEET_API_KEY;
-        const spreadsheetId = process.env.REACT_APP_SPREADSHEET_ID;
+        const apiKey = import.meta.env.VITE_SPREADSHEET_API_KEY;
+        const spreadsheetId = import.meta.env.VITE_SPREADSHEET_ID;
         const range = 'Sheet1!A2:A6';
 
         const fetchData = async () => {
