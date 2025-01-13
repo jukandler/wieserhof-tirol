@@ -19,14 +19,6 @@ jobs:
           node-version: '18'
 
       - name: Add environment variables
-        env:
-          REACT_APP_SPREADSHEET_API_KEY: ${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}
-          REACT_APP_SPREADSHEET_ID: ${{ secrets.REACT_APP_SPREADSHEET_ID }}
-        run: |
-          echo "REACT_APP_SPREADSHEET_API_KEY is $REACT_APP_SPREADSHEET_API_KEY"
-          echo "REACT_APP_SPREADSHEET_ID is $REACT_APP_SPREADSHEET_ID"
-
-      - name: Pass secrets to a script
         run: |
           echo "export REACT_APP_SPREADSHEET_API_KEY=${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
           echo "export REACT_APP_SPREADSHEET_ID=${{ secrets.REACT_APP_SPREADSHEET_ID }}" >> $GITHUB_ENV
