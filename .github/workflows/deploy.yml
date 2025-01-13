@@ -10,34 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Repository klonen
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Node.js installieren
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # 3. Umgebungsvariablen bereitstellen
       - name: Add environment variables
         env:
           REACT_APP_SPREADSHEET_API_KEY: ${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}
           REACT_APP_SPREADSHEET_ID: ${{ secrets.REACT_APP_SPREADSHEET_ID }}
         run: |
-          echo "REACT_APP_SPREADSHEET_API_KEY=${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
-          echo "REACT_APP_SPREADSHEET_ID=${{ secrets.REACT_APP_SPREADSHEET_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_SPREADSHEET_API_KEY is $REACT_APP_SPREADSHEET_API_KEY"
+          echo "REACT_APP_SPREADSHEET_ID is $REACT_APP_SPREADSHEET_ID"
 
-      # 4. Dependencies installieren
+      - name: Pass secrets to a script
+        run: |
+          echo "export REACT_APP_SPREADSHEET_API_KEY=${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
+          echo "export REACT_APP_SPREADSHEET_ID=${{ secrets.REACT_APP_SPREADSHEET_ID }}" >> $GITHUB_ENV
+  
       - name: Install dependencies
         run: npm install
 
-      # 5. Build ausführen
       - name: Build project
         run: npm run build
 
-      # 6. Deploy zu GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
