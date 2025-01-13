@@ -20,8 +20,8 @@ jobs:
 
       - name: Add environment variables
         run: |
-          echo "export VITE_SPREADSHEET_API_KEY=${{ secrets.VITE_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
-          echo "export VITE_SPREADSHEET_ID=${{ secrets.VITE_SPREADSHEET_ID }}" >> $GITHUB_ENV
+          echo "VITE_SPREADSHEET_API_KEY=${{ secrets.VITE_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
+          echo "VITE_SPREADSHEET_ID=${{ secrets.VITE_SPREADSHEET_ID }}" >> $GITHUB_ENV
   
       - name: Install dependencies
         run: npm install
