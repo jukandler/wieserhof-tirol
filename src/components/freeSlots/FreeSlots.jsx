@@ -35,7 +35,7 @@ function FreeSlots() {
 
     return (
         <div className="free-slots">
-            <h4>Letzte Chance!</h4>
+            <h4>Letzte Chance:</h4>
             <div className="date-container">
                 {slots.map((slot, i) => <div key={i}>{slot}</div>)}
             </div>
