@@ -88,9 +88,8 @@ function Form() {
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="number_of_children">Anzahl Kinder*</label>
+                <label htmlFor="number_of_children">Anzahl und Alter der Kinder*</label>
                 <input
-                    type="number"
                     name="number_of_children"
                     className="form-control"
                     id="number_of_children"
