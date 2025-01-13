@@ -67,7 +67,7 @@ function Hero() {
                     </picture>
                 </div>
             ))}
-            <h1>Willkommen<br></br>auf dem Wieserhof</h1>
+            <h1>Willkommen<br></br>auf dem Wieserhof!</h1>
             <div className="logo-container">
                 <Logo />
             </div>
