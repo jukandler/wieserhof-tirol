@@ -25,7 +25,9 @@ jobs:
         env:
           REACT_APP_SPREADSHEET_API_KEY: ${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}
           REACT_APP_SPREADSHEET_ID: ${{ secrets.REACT_APP_SPREADSHEET_ID }}
-        run: echo "Environment variables injected"
+        run: |
+          echo "REACT_APP_SPREADSHEET_API_KEY=${{ secrets.REACT_APP_SPREADSHEET_API_KEY }}" >> $GITHUB_ENV
+          echo "REACT_APP_SPREADSHEET_ID=${{ secrets.REACT_APP_SPREADSHEET_ID }}" >> $GITHUB_ENV
 
       # 4. Dependencies installieren
       - name: Install dependencies
