@@ -1,55 +1,50 @@
+import { useEffect, useState } from "react";
 import "./priceList.css"
+import fetchSpreadsheetData from "../../helpers/fetchSpreadsheetData";
 
 function PriceList() {
+
+    const [prices, setPrices] = useState(null);
+    
+    useEffect(() => {
+        fetchSpreadsheetData('Sheet1!A10:H13', setPrices);
+        console.log('prices :', prices);
+    }, []);
+
+    if (!prices) {
+        return undefined;
+    }
+
+    const tableRow = (i, seasonTitle, seasonPrice, seasonWeeks) => {
+        return (
+            <tr key={i}>
+                <td>
+                    {seasonTitle}
+                    <span className="season">
+                        {seasonWeeks.map((week, i) => <div key={i}>{week}</div>)}
+                    </span>
+                </td>
+                <td>{seasonPrice}</td>
+            </tr>
+        )
+    }
+
     return (
         <div className="price-list grid-text_wide" style={{marginBottom: "60px"}}>
-            <h2>Preise der aktuellen Saison 2024/2025</h2>
+            <h2>Preise der aktuellen Saison</h2>
             <table>
                 <thead>
                     <tr>
-                        <th colSpan="2"><b>Basispreis bei Belegung für bis 4 Personen</b></th>
+                        <th colSpan="2"><b>Basispreis pro Nacht bei Belegung bis max. 4 Personen</b></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            Nebensaison
-                            <span className="season">
-                                24.02.2024 - 22.03.2024<br></br>
-                                06.04.2024 - 17.05.2024<br></br>
-                                07.09.2024 - 20.12.2024<br></br>
-                                07.01.2025 - 31.01.2025<br></br>
-                                08.03.2025 - 11.04.2025<br></br>
-                            </span>
-                        </td>
-                        <td>200€</td>
-                    </tr>
-                    <tr>
-                        <td>Wintersaison
-                            <span className="season">
-                                23.03.2024 - 05.04.2024<br></br>
-                                12.04.2025 - 25.04.2025
-                            </span>
-                        </td>
-                        <td>250€</td>
-                    </tr>
-                    <tr>
-                        <td>Sommersaison
-                            <span className="season">
-                                18.05.2024 - 06.09.2024
-                            </span>
-                        </td>
-                        <td>250€</td>
-                    </tr>
-                    <tr>
-                        <td>Topsaison Winter
-                            <span className="season">
-                                21.12.2024 - 06.01.2025<br></br>
-                                01.02.2025 - 07.03.2025
-                            </span>
-                        </td>
-                        <td>320€</td>
-                    </tr>
+                    {prices.map((season, index) => {
+                        const title = season[0];
+                        const price = season[1];
+                        const weeks = season.map((week, i) => i > 1 ? week : "")
+                        return tableRow(index, title, price, weeks)
+                    })}
                 </tbody>
             </table>
             <p><b>Jede weitere Person</b> wird mit 25€ pro Nacht berechnet (Belegung bis max. 6 Personen).</p>
