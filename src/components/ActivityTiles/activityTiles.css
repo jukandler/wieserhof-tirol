@@ -1,0 +1,129 @@
+.activity-tiles-section {
+  max-width: min(1200px, calc(100% - (2 * 25px)));
+  margin: 0 auto;
+}
+
+.activity-tiles-heading {
+    text-align: center;
+}
+
+.activity-tiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.activity-tile {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.activity-tile:hover {
+  transform: translateY(-10px);
+}
+
+.activity-tile-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.activity-tile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.activity-tile:hover .activity-tile-image {
+  transform: scale(1.05);
+}
+
+.activity-tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
+}
+
+.activity-tile-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  z-index: 2;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.activity-tile:hover .activity-tile-content {
+  transform: translateY(-10px);
+}
+
+.activity-tile-title {
+  text-align: left;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+
+.activity-tile-subtitle {
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.activity-tile-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+  font-weight: 300;
+  max-width: 90%;
+}
+
+.activity-tile-button {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-secondary);
+  transition: all 0.3s ease;
+}
+
+.activity-tile-button span {
+  margin-right: 8px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.activity-tile-button svg {
+  transition: transform 0.3s ease;
+}
+
+.activity-tile:hover .activity-tile-button {
+  border-color: white;
+}
+
+.activity-tile:hover .activity-tile-button svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 850px) {  
+    .activity-tiles-container {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-tile {
+        height: 350px;
+    }
+}

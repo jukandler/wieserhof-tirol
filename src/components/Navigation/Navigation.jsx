@@ -47,6 +47,8 @@ function Navigation() {
                     <Link to="/ferienwohnung" onClick={handleClick}>Ferienwohnung</Link>
                     <Link to="/wieserhof" onClick={handleClick}>Der Wieserhof</Link>
                     <Link to="/oetztal" onClick={handleClick}>Das Ötztal</Link>
+                    <Link to="/sommer" onClick={handleClick}>Sommer</Link>
+                    <Link to="/winter" onClick={handleClick}>Winter</Link>
                     <Link to="/anfahrt" onClick={handleClick}>Anfahrt</Link>
                     {/* <Link to="/preise" onClick={handleClick}>Preise</Link> */}
                     <Link to="/buchung" onClick={handleClick}>Buchung</Link>

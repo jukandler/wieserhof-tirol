@@ -21,6 +21,9 @@ import Contact from "./pages/Contact";
 import DataPrivacy from "./pages/DataPrivacy";
 import Prices from "./pages/Prices";
 import Booking from "./pages/Booking";
+import Sommer from "./pages/Sommer";
+import Winter from "./pages/Winter";
+import Indoor from "./pages/Indoor";
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
           <Route exact path="/ferienwohnung" element={<Apartment/>} />
           <Route exact path="/wieserhof" element={<Wieserhof/>} />
           <Route exact path="/oetztal" element={<Oetztal/>} />
+          <Route exact path="/sommer" element={<Sommer/>} />
+          <Route exact path="/winter" element={<Winter/>} />
+          <Route exact path="/indoor" element={<Indoor/>} />
           <Route exact path="/anfahrt" element={<Anfahrt/>} />
           <Route exact path="/anfrage" element={<Contact/>} />
           {/* <Route exact path="/preise" element={<Prices/>} /> */}

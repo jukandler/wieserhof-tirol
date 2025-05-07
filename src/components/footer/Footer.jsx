@@ -6,6 +6,7 @@ import IconFacebook from "../../assets/icons/facebook.png";
 import IconInstagram from "../../assets/icons/instagram.png";
 import OetztalLogo from "../../assets/images/logo-oetztal.jpg"
 import TirolLogo from "../../assets/images/logo-tirol.jpg"
+import UABLogo from "../../assets/images/urlaub-am-bauernhof.png"
 
 import './footer.css';
 import BookingEmbed from "../booking/BookingEmbed";
@@ -34,6 +35,9 @@ function Footer() {
                 </a>
             </div>
             <BookingEmbed />
+            <a className="urlaub-am-bauernhof-logo" href="http://www.urlaubambauernhof.at/" target="_blank" rel="noopener noreferrer">
+                <img src={UABLogo} alt="Logo Urlaub am Bauernhof" style={{width: "150px", margin: "10px 0"}} loading="lazy"/>
+            </a>
             <a className="tirol-logo" href="" target="_blank" rel="noopener noreferrer">
                 <img src={TirolLogo} alt="Logo Tirol" style={{width: "150px", margin: "10px 0"}} loading="lazy"/>
             </a>

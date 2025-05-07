@@ -15,12 +15,6 @@ function Imprint() {
                     <p>Telefon: <a href="tel:+4369910553435">+43 699 1055 3435</a></p>
                     <p>E-Mail: <a href="mailto:info@wieserhof-tirol.at">info@wieserhof-tirol.at</a></p>
                 </section>
-                <section className="no-margin">
-                    <h2>Gestaltung und Programmierung:</h2>
-                    <p><b>Julia Kandler</b></p>
-                    <p>Königinstraße 37, 80539 München</p>
-                    <p>E-Mail: <a href="mailto:julia@kskandler.de">julia@kskandler.de</a></p>
-                </section>
                 <section>
                     <h2>Haftung für Inhalte:</h2>
                     <p>

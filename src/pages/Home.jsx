@@ -4,6 +4,7 @@ import ImageTileBad from "../assets/images/image-tile-bad.jpg"
 import ImageTileBalkonView from "../assets/images/balkon-view.jpg"
 import ImageTileOetztal from "../assets/images/skigebiet-hochoetz.jpeg"
 import SplitTiles from '../components/SplitTiles/SplitTiles';
+import ActivityTiles from '../components/ActivityTiles/ActivityTiles';
 
 function Home() {
     return (
@@ -37,6 +38,7 @@ function Home() {
                 text="Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung."
                 reverse={true}
             />
+            <ActivityTiles />
             <section className="grid-text_wide">
                 <div className="divider space-top"></div>
                 <h2>Ihre Gastgeber</h2>
