@@ -15,8 +15,8 @@ function Oetztal() {
                 <p>Im Sommer kannst du hier die frische Bergluft bei Wanderungen auf gut ausgeschilderten Wegen genießen. Besonders beliebt sind Ausflüge zum Piburger See, einem der schönsten Naturseen Tirols, der mit seinem türkisblauen Wasser zum Baden und Entspannen einlädt. Für Abenteuerlustige gibt es auch Möglichkeiten zum Klettern, Mountainbiken, Raften, Canyoning oder Paragliding. Nach einem aktiven Tag kannst du in den charmanten Cafés und Restaurants die regionale Tiroler Küche probieren.</p>
                 <p>Im Winter verwandelt sich Oetz in ein kleines Winterwunderland. Die Region bietet Zugang zum Familienski- und Wandergebiet Hochoetz-Kühtai, das sowohl für Anfänger als auch Fortgeschrittene geeignet ist. Auch Langlaufen, Schneeschuhwandern und Rodeln sind beliebte Aktivitäten, um die winterliche Landschaft zu erkunden. Nach einem Tag im Schnee kannst du dich in einer der gemütlichen Unterkünfte entspannen und die alpine Atmosphäre genießen.</p>
                 <p>Oetz ist also ein idealer Ort für alle, die Natur, Abenteuer und Erholung miteinander verbinden möchten. Es ist ein Ort, der sowohl im Sommer als auch im Winter viel zu bieten hat und sicherlich für schöne Erinnerungen sorgt.</p>
-                <h3>Die Tradion im Ötztal bzw. im Tiroler Oberland</h3>
-                <p>Das Ötztal ist eine Region mit einer reichen Tradition, lebendigen Bräuchen und erlebnisreichen Veranstaltunen, die das kulturelle Leben prägen. Hier sind einige der wichtigsten Traditionen und Veranstaltungen im Ötztal:</p>
+                {/* <h3>Die Tradion im Ötztal bzw. im Tiroler Oberland</h3>
+                <p>Das Ötztal ist eine Region mit einer reichen Tradition, lebendigen Bräuchen und erlebnisreichen Veranstaltunen, die das kulturelle Leben prägen. Hier sind einige der wichtigsten Traditionen und Veranstaltungen im Ötztal:</p> */}
             </div>
             <Footer />
         </div>
