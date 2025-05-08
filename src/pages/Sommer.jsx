@@ -50,7 +50,7 @@ const activities = [
         Der Abenteuerpark "Widiversum" in der Almenregion Hochoetz mit verschiedenen Rätseln und Attraktionen, sind Ihre Kinder bestens unterhalten.<br><br>
         <strong>Waldspielplatz Ochsenbrunnen</strong><br>
         In Ochsengarten ist ein toller Themenspielplatz mit vielen Spielgeräten aus Holz.<br><br>
-        <strong>Zauberwald Sauens</strong><br>Tierischer Themenweg mit Aussichtsplattform und kleinem Waldspielplatz
+        <strong>Zauberwald Sauens</strong><br>Tierischer Themenweg mit Aussichtsplattform und kleinem Waldspielplatz<br><br>
         <strong>Greifvogelpark Ötztal</strong><br>
         Auf dem rund 5.000 m² großem Areal am Fuße von Tirols größtem Wasserfall können Sie Greifvögel hautnah erleben.<br><br>
         <strong>Ötzidorf</strong><br>
