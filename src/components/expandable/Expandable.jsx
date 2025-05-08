@@ -3,10 +3,23 @@ import './expandable.css';
 
 const Expandable = ({ title, image, description }) => {
   const [expanded, setExpanded] = useState(false);
+  const [contentHeight, setContentHeight] = useState('100px');
   const contentRef = useRef(null);
   
   // Erstellt eine gekürzte Version des Beschreibungstextes
   const shortDescription = description.substring(0, 150) + '...';
+  
+  // Aktualisiert die Höhe, wenn sich der expanded-Status ändert
+  useEffect(() => {
+    if (expanded && contentRef.current) {
+      // Kurze Verzögerung, um sicherzustellen, dass der DOM aktualisiert wurde
+      setTimeout(() => {
+        setContentHeight(`${contentRef.current.scrollHeight}px`);
+      }, 10);
+    } else {
+      setContentHeight('100px');
+    }
+  }, [expanded]);
   
   const toggleExpand = () => {
     setExpanded(!expanded);
@@ -23,12 +36,13 @@ const Expandable = ({ title, image, description }) => {
         
         <div 
           className="teaser-description-container"
-          style={{ 
-            maxHeight: expanded ? `${contentRef.current?.scrollHeight}px` : '100px'
-          }}
+          style={{ maxHeight: contentHeight }}
         >
           <div className="teaser-description-inner" ref={contentRef}>
-            <p className="teaser-description" dangerouslySetInnerHTML={{__html: expanded ? description : shortDescription}}></p>
+            <p 
+              className="teaser-description" 
+              dangerouslySetInnerHTML={{__html: expanded ? description : shortDescription}}
+            ></p>
           </div>
         </div>
         
