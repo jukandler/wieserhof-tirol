@@ -12,6 +12,7 @@ import Rafting from "../assets/images/sommer/Rafting.jpg";
 import Pferde from "../assets/images/sommer/Pferde.jpg";
 import Wandern from "../assets/images/sommer/Wandern.jpg";
 import Expandable from '../components/expandable/Expandable';
+import { Link } from 'react-router-dom';
 
 const activities = [
     {
@@ -160,6 +161,7 @@ function Sommer() {
                     />
                 ))}
             </div>
+            <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
     )

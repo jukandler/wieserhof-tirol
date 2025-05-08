@@ -7,6 +7,7 @@ import Langlauf from "../assets/images/winter/Langlauf.jpg";
 import Rodeln from "../assets/images/winter/Rodeln.jpg";
 import Schneeschuh from "../assets/images/winter/Schneeschuh.jpg";
 import Skitour from "../assets/images/winter/Skitour.jpg";
+import { Link } from 'react-router-dom';
 
 
 const activities = [
@@ -124,6 +125,7 @@ function Winter() {
                     />
                 ))}
             </div>
+            <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
     )

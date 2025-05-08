@@ -14,6 +14,7 @@ import naturparkhaus from "../assets/images/indoor/naturparkhaus.jpg";
 import Schnapsbrennen from "../assets/images/indoor/Schnapsbrennen.jpg";
 import TopMountain from "../assets/images/indoor/TopMountain.jpg";
 import Turmmuseum from "../assets/images/indoor/Turmmuseum.jpg";
+import { Link } from 'react-router-dom';
 
 
 const activities = [
@@ -134,6 +135,7 @@ function Indoor() {
                     />
                 ))}
             </div>
+            <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
     )

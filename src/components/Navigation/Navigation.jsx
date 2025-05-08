@@ -78,7 +78,8 @@ function Navigation() {
                     <Link to="/anfahrt" onClick={handleClick}>Anfahrt</Link>
                     {/* <Link to="/preise" onClick={handleClick}>Preise</Link> */}
                     <Link to="/buchung" onClick={handleClick}>Buchung</Link>
-                    <Link to="/anfrage" onClick={handleClick}>Anfrage senden</Link>
+                    {/* <Link to="/anfrage" onClick={handleClick}>Anfrage senden</Link> */}
+                    <Link to="/anfrage" onClick={handleClick}><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
                 </div>
             </div>}
         </nav>

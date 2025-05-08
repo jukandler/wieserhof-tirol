@@ -5,6 +5,7 @@ import ImageTileBalkonView from "../assets/images/balkon-view.jpg"
 import ImageTileOetztal from "../assets/images/skigebiet-hochoetz.jpeg"
 import SplitTiles from '../components/SplitTiles/SplitTiles';
 import ActivityTiles from '../components/ActivityTiles/ActivityTiles';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -13,7 +14,8 @@ function Home() {
             <section className="grid-text_wide" style={{ margin: "60px auto" }}>
                 <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom Skigebiet entfernt.</h3>
                 <p>Herzlich Willkommen am Bergbauernhof Wieserhof in Oetz in Tirol! Der Wieserhof befindet sich in Alleinlage auf ca. 1.100 m Seehöhe abseits von jeglichem Verkehr und ist der ideale Urlaubsort für Ruhesuchende, Naturliebhaber und Familien.</p>
-                <div className="divider space-bottom"></div>
+                <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
+                {/* <div className="divider space-bottom"></div> */}
             </section>
             <SplitTiles
                 linkTo="/ferienwohnung"
@@ -51,6 +53,7 @@ function Home() {
                     Barbara & Michl
                 </p>
             </section>
+            <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
         </div>
     )
