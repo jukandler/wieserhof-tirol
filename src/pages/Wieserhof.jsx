@@ -25,7 +25,7 @@ function Wieserhof() {
             <Header title="Der Wieserhof" image={HeaderImage} alt="Wieserhof Blick von außen"/>
             <div className="grid-text_wide">
                 <h2>Dieser Bereich befindet sich aktuell noch im Aufbau.</h2>
-                <GalleryNew images={galleryImages} />
+                {/* <GalleryNew images={galleryImages} /> */}
             </div>
             <Footer />
         </div>
