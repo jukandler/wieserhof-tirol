@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ActivityTiles.css';
+import './activityTiles.css';
 import SommerImg from "../../assets/images/sommer/Biken.jpg";
 import WinterImg from "../../assets/images/winter/alpinski.jpg";
 import IndoorImg from "../../assets/images/indoor/naturparkhaus.jpg";
