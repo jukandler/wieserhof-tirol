@@ -52,8 +52,8 @@ const Expandable = ({ title, image, description }) => {
         >
           <span>{expanded ? 'Weniger anzeigen' : 'Weiterlesen'}</span>
           <svg 
-            width="16" 
-            height="16" 
+            width="24" 
+            height="24" 
             viewBox="0 0 24 24"
             className={expanded ? 'rotate-icon' : ''}
           >
