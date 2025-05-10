@@ -13,6 +13,7 @@ function MenuToCloseIcon({ color = "#6A5744", isOpen}) {
                 <line stroke={color} strokeLinecap="square" strokeWidth="3" x1="30" x2="2" y1="16" y2="16" strokeLinejoin="miter"></line></g>
                 </g>
             </svg>
+            <span class="description" style={{color: color}}>MENÜ</span>
         </div>
     )
 }

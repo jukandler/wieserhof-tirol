@@ -9,8 +9,7 @@ import Bergmesse from "../assets/images/traditions/Bergmesse.jpg";
 import Krampus from "../assets/images/traditions/Krampus.jpg";
 import Handwerk from "../assets/images/traditions/Handwerk.jpg";
 import Markttage from "../assets/images/traditions/Markttage.jpg";
-import Wieserhof from "../assets/images/traditions/Wieserhof Sommer.jpeg";
-
+import GelebteTradition from "../assets/images/traditions/GelebteTradition.jpg";
 
 const activities = [
     {
@@ -107,7 +106,7 @@ const activities = [
     },
     {
           title: 'Gelebte Tradition bei uns am Wieserhof',
-          image: Wieserhof,
+          image: GelebteTradition,
           description: `
             Auch wir am Wieserhof halten im Jahresverlauf an vielen verschiedenen großen und kleinen Traditionen fest. Diese reichen vom Besuch der Sternsinger am Jahresanfang, dem traditionellen Räuchern von Speck zu der vorösterlichen Fastenzeit, der Osterzeit selber zu dieser für die Kinder Palmlatten gebunden werden. Aus dieser Tradition entstand ein Jahrhundertlanger Wettstreit, wer die längste Palmlatte hat. Diese können bis zu 30 Meter lang sein. Aber auch das Ostereier färben und Osterlamm backen gehört zur Osterzeit selber.<br>
             Der Herbst beginnt mit der Obsternte und dem „einmaischen“ der Äpfel und Birnen für das Schnaps brennen, bevor die Adventszeit mit den Kampusläufen eingeläutet wird.<br>
