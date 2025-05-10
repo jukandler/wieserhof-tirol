@@ -2,7 +2,7 @@ import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
 import ImageTileBad from "../assets/images/image-tile-bad.jpg"
 import ImageTileBalkonView from "../assets/images/wieserhof/Wieserhof Sommer.jpeg"
-import ImageTileOetztal from "../assets/images/skigebiet-hochoetz.jpeg"
+import ImageTileOetztal from "../assets/images/oetztal.jpg"
 import SplitTiles from '../components/SplitTiles/SplitTiles';
 import ActivityTiles from '../components/ActivityTiles/ActivityTiles';
 import { Link } from 'react-router-dom';

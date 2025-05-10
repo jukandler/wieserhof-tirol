@@ -1,6 +1,6 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import HeaderImage from "../assets/images/skigebiet-hochoetz.jpeg";
+import HeaderImage from "../assets/images/oetztal.jpg";
 import Expandable from '../components/expandable/Expandable';
 import HerzJesu from "../assets/images/traditions/HerzJesu.jpg";
 import Prozession from "../assets/images/traditions/Prozession.jpg";
