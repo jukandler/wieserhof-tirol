@@ -21,7 +21,7 @@ import Willkommensgruß from "../assets/images/wieserhof/Willkommensgruß.jpg";
 // Gallerie alte Bilder
 import AussichtAlt from "../assets/images/wieserhof/alt/Aussicht.jpg";
 import Bauer from "../assets/images/wieserhof/alt/Bauer.jpg";
-import Erbhof from "../assets/images/wieserhof/alt/Erbhof.jpg";
+import Erbhof from "../assets/images/wieserhof/alt/erbhof.jpg";
 import Frau from "../assets/images/wieserhof/alt/Frau.jpg";
 import Heu from "../assets/images/wieserhof/alt/Heu.jpg";
 import Hof from "../assets/images/wieserhof/alt/Hof.jpg";
