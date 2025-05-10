@@ -1,159 +1,217 @@
-import Gallery from 'react-image-gallery';
-import Bad1 from "../../assets/images/gallery/ansicht-traumbad-1.jpeg";
-import Bad2 from "../../assets/images/gallery/ansicht-traumbad-2.jpeg";
-import Bad3 from "../../assets/images/gallery/auch-so-geht-s.jpeg";
-import Wohnraum1 from "../../assets/images/gallery/doppelbett-im-offenen-wohnbereich.jpeg";
-import Wohnraum2 from "../../assets/images/gallery/doppelbett-mit-offenem-wohnraum-1.jpeg";
-import Wohnraum3 from "../../assets/images/gallery/doppelbett-mit-offenem-wohnraum-2.jpeg";
-import Dusche from "../../assets/images/gallery/dusche-im-traumbad.jpeg";
-import Eingangsbereich from "../../assets/images/gallery/eingangsbereich.jpeg";
-import Kueche from "../../assets/images/gallery/hochwertig-ausgestattete-kueche.jpeg";
-import Ofen from "../../assets/images/gallery/kuschelecke-mit-ofen.jpeg";
-import Badewanne from "../../assets/images/gallery/luxusbadewanne-im-traumbad.jpeg";
-import Wohnraum4 from "../../assets/images/gallery/mein-wohntraum-1.jpeg";
-import Wohnraum5 from "../../assets/images/gallery/mein-wohntraum-2.jpeg";
-import Wohnraum6 from "../../assets/images/gallery/mein-wohntraum-3.jpeg";
-import Schlafzimmer1 from "../../assets/images/gallery/schlafzimmer-dachgeschoss-1.jpeg";
-import Schlafzimmer2 from "../../assets/images/gallery/schlafzimmer-dachgeschoss-2.jpeg";
-import Bad4 from "../../assets/images/gallery/traumbad-1.jpeg";
-import Bad5 from "../../assets/images/gallery/traumbad-2.jpeg";
-import Bad6 from "../../assets/images/gallery/waschtisch-im-traumbad.jpeg";
+import React, { useState, useRef, useEffect } from 'react';
+import './imageGallery.css';
 
-import "./gallery.css";
+const ImageGallery = ({ images, size = "default" }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const galleryRef = useRef(null);
 
-const images = [
-    {
-        original: Bad1,
-        thumbnail: Bad1,
-        description: "Blick ins Badezimmer"
-    },
-    {
-        original: Bad2,
-        thumbnail: Bad2,
-        description: "Blick ins Badezimmer"
-    },
+  // Automatisches Scrollen für die Thumbnails, um den aktiven sichtbar zu halten
+  useEffect(() => {
+    if (galleryRef.current) {
+      const thumbnails = galleryRef.current.querySelector('.gallery-thumbnails');
+      const activeThumb = thumbnails.querySelector(`.thumbnail-item:nth-child(${activeIndex + 1})`);
+      
+      if (activeThumb) {
+        thumbnails.scrollLeft = activeThumb.offsetLeft - thumbnails.offsetWidth / 2 + activeThumb.offsetWidth / 2;
+      }
+    }
+  }, [activeIndex]);
+
+  // Schließt die Lightbox mit der Escape-Taste
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isLightboxOpen) {
+        setIsLightboxOpen(false);
+      } else if (e.key === 'ArrowRight' && isLightboxOpen) {
+        navigateLightbox(1);
+      } else if (e.key === 'ArrowLeft' && isLightboxOpen) {
+        navigateLightbox(-1);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
     
-    {
-        original: Wohnraum1,
-        thumbnail: Wohnraum1,
-        description: "Doppelbett im offenen Wohnbereich"
-    },
-    {
-        original: Wohnraum2,
-        thumbnail: Wohnraum2,
-        description: "Doppelbett im offenen Wohnbereich"
-    },
-    {
-        original: Wohnraum3,
-        thumbnail: Wohnraum3,
-        loading: "lazy",
-        description: "Offener Wohnraum"
-    },
-    {
-        original: Eingangsbereich,
-        thumbnail: Eingangsbereich,
-        loading: "lazy",
-        description: "Eingangsbereich"
-    },
-    {
-        original: Kueche,
-        thumbnail: Kueche,
-        loading: "lazy",
-        description: "Hochwertig ausgestattete Küche"
-    },
-    {
-        original: Ofen,
-        thumbnail: Ofen,
-        loading: "lazy",
-        description: "Kuschelecke mit Ofen"
-    },
-    {
-        original: Wohnraum4,
-        thumbnail: Wohnraum4,
-        loading: "lazy",
-        description: "Wohnraum / Essbereich"
-    },
-    {
-        original: Wohnraum5,
-        thumbnail: Wohnraum5,
-        loading: "lazy",
-        description: "Wohnraum / Essbereich"
-    },
-    {
-        original: Wohnraum6,
-        thumbnail: Wohnraum6,
-        loading: "lazy",
-        description: "Wohnraum / Essbereich"
-    },
-    {
-        original: Schlafzimmer1,
-        thumbnail: Schlafzimmer1,
-        loading: "lazy",
-        description: "Doppelbett im Obergeschoss"
-    },
-    {
-        original: Schlafzimmer2,
-        thumbnail: Schlafzimmer2,
-        loading: "lazy",
-        description: "Zwei getrennte Betten im Obergeschoss"
-    },
-    {
-        original: Dusche,
-        thumbnail: Dusche,
-        loading: "lazy",
-        description: "Offene Regendusche"
-    },
-    {
-        original: Bad4,
-        thumbnail: Bad4,
-        loading: "lazy",
-        description: "Badezimmer"
-    },
-    {
-        original: Bad5,
-        thumbnail: Bad5,
-        loading: "lazy",
-        description: "Badezimmer"
-    },
-    {
-        original: Badewanne,
-        thumbnail: Badewanne,
-        loading: "lazy",
-        description: "Lusuxbadewanne"
-    },
-    {
-        original: Bad3,
-        thumbnail: Bad3
-    },
-    {
-        original: Bad6,
-        thumbnail: Bad6,
-        loading: "lazy",
-        description: "Waschtisch"
-    },
-];
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isLightboxOpen, lightboxIndex]);
 
-function ImageGallery() {
-    const handleScreenChange = (isFullscreen) => {
-        const stickyNavbar = document.querySelector(".sticky-navbar");
-        if (isFullscreen) {
-            stickyNavbar.style.display = "none";
-        } else {
-            stickyNavbar.style.display = "block";
-        }
+  // Verhindert Scrollen des Hintergrunds, wenn Lightbox geöffnet ist
+  useEffect(() => {
+    if (isLightboxOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
     
-    return (
-        <div className="wieserhof-gallery grid-expanded">
-            <Gallery
-                items={images}
-                showBullets={window.matchMedia('(min-width: 750px)').matches}
-                showIndex={true}
-                showPlayButton={false}
-                onScreenChange={handleScreenChange}
-                />
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isLightboxOpen]);
+
+  const handleThumbnailClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  const openLightbox = (index) => {
+    setLightboxIndex(index);
+    setIsLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setIsLightboxOpen(false);
+  };
+
+  const navigateLightbox = (direction) => {
+    const newIndex = lightboxIndex + direction;
+    if (newIndex >= 0 && newIndex < images.length) {
+      setLightboxIndex(newIndex);
+    }
+  };
+
+  // Touch-Events für Swipe-Gesten
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 100) {
+      // Swipe nach links
+      navigateLightbox(1);
+    }
+
+    if (touchStart - touchEnd < -100) {
+      // Swipe nach rechts
+      navigateLightbox(-1);
+    }
+  };
+
+  return (
+    <div className="gallery-container" ref={galleryRef}>
+      <div className="gallery-main">
+        <img 
+          src={images[activeIndex].src} 
+          alt={images[activeIndex].caption} 
+          className={`gallery-main-image size-${size}`}
+          onClick={() => openLightbox(activeIndex)}
+        />
+        <div className="gallery-main-caption">
+          <p>{images[activeIndex].caption}</p>
         </div>
-    );
-}
+      </div>
+      
+      <div className="gallery-thumbnails-container">
+        <button 
+          className="gallery-nav-button gallery-nav-prev" 
+          onClick={() => {
+            const newIndex = Math.max(0, activeIndex - 1);
+            setActiveIndex(newIndex);
+          }}
+          disabled={activeIndex === 0}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor" />
+          </svg>
+        </button>
+        
+        <div className="gallery-thumbnails">
+          {images.map((image, index) => (
+            <div 
+              key={index} 
+              className={`thumbnail-item ${index === activeIndex ? 'active' : ''}`}
+              onClick={() => handleThumbnailClick(index)}
+            >
+              <img src={image.src} alt={`Thumbnail ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        
+        <button 
+          className="gallery-nav-button gallery-nav-next" 
+          onClick={() => {
+            const newIndex = Math.min(images.length - 1, activeIndex + 1);
+            setActiveIndex(newIndex);
+          }}
+          disabled={activeIndex === images.length - 1}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+
+      {/* Lightbox */}
+      {isLightboxOpen && (
+        <div 
+          className="gallery-lightbox"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          <div className="lightbox-overlay" onClick={closeLightbox}></div>
+          <div className="lightbox-content">
+            <button className="lightbox-close" onClick={closeLightbox}>
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor" />
+              </svg>
+            </button>
+            
+            <div className="lightbox-image-container">
+              <img 
+                src={images[lightboxIndex].src} 
+                alt={images[lightboxIndex].alt} 
+                className="lightbox-image" 
+              />
+              
+              {images[lightboxIndex].caption && (
+                <div className="lightbox-caption">
+                  <p>{images[lightboxIndex].caption}</p>
+                </div>
+              )}
+            </div>
+            
+            <button 
+              className="lightbox-nav lightbox-prev" 
+              onClick={(e) => {
+                e.stopPropagation();
+                navigateLightbox(-1);
+              }}
+              disabled={lightboxIndex === 0}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor" />
+              </svg>
+            </button>
+            
+            <button 
+              className="lightbox-nav lightbox-next" 
+              onClick={(e) => {
+                e.stopPropagation();
+                navigateLightbox(1);
+              }}
+              disabled={lightboxIndex === images.length - 1}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" />
+              </svg>
+            </button>
+            
+            <div className="lightbox-counter">
+              {lightboxIndex + 1} / {images.length}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default ImageGallery;

@@ -1,6 +1,6 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import GalleryNew from '../components/ImageGallery/GalleryNew';
+import ImageGallery from '../components/ImageGallery/ImageGallery';
 
 // Gallerie
 import WieserhofSommer from "../assets/images/wieserhof/Wieserhof Sommer.jpeg";
@@ -135,7 +135,7 @@ function Wieserhof() {
     return (
         <div id="wieserhof">
             <Header title="Der Wieserhof"/>
-            <GalleryNew images={galleryImages} />
+            <ImageGallery images={galleryImages} />
             <div className="grid-text_wide">
                 <h2>Ein Ort mit Geschichte, Herz und Aussicht</h2>
                 <h3>Lage und Erreichbarkeit</h3>
@@ -146,7 +146,7 @@ function Wieserhof() {
                 <p>Wir betreiben unsere Landwirtschaft im Nebenerwerb mit Tierhaltung (Ziegen, Pferden, Ponys, Hühnern, Enten, Hasen und Katzen), haben jedoch auch Streuobstwiesen mit Äpfeln, Birnen und Zwetschken und einen großen Bauerngarten mit verschiedenen Gemüsesorten und Beeren. Mittlerweile erleichtern hangtaugliche Spezialmaschinen die Heuarbeiten, es ist jedoch nach wie vor eine Herausforderung die steilen Flächen zu bewirtschaften.</p>
                 <h3>Ein Hof mit langer Geschichte</h3>
                 <p>Unser Hof ist nachweislich seit 1680 in Familienbesitz, es gibt jedoch Hinweise das der Hof schon viel früher entstanden ist. 1977 hatte mein Großvater Johann Fischer und seine Gattin Johanna Fischer die damaligen Besitzer vom Hof die große Ehre das ihnen der Titel Erbhof verliehen wurde. Wir sind stolz darauf unseren  Bergbauernhof der über Generationen mit sicherlich vielen Höhen und Tiefen, Freuden und auch Leid immer wieder gehalten werden konnte und somit von Generation an Generation weitergegeben wurde. Unsere Auffassung ist es auch das wir das unseren Ahnen in gewisser Weise schuldig sind den Hof weiterzuführen und auch stolz darauf sind was unsere Vorfahren mit viel Mühen und mit vielen fleißigen Händen geschaffen haben.  </p>
-                <GalleryNew size="small" images={galleryImagesOld} />
+                <ImageGallery size="small" images={galleryImagesOld} />
                 <p>Wir betreiben unseren Hof in mittlerweile 10. Generation bewusst nicht als Biobetrieb, denn wir sind der Auffassung, das es viel wertvoller ist unseren Betrieb in natürlicher Weise so weiterzuführen, wie es auch schon unsere Ahnen taten und das dies mit keinem Titel vergleichbar ist den man erwerben kann indem man sich an die Vorgaben hält die uns die EU und andere Behörden vorschreiben möchten.</p>
                 <h3>Unsere Familie</h3>
                 <p>Seit meiner Kindheit habe ich die Ehre am Hof mitzuarbeiten und seit 2009 ist der Hof jetzt auch in unserem Besitz. Wir das bin ich, der „Wieserbauer“ Michl und meine Frau die Bäuerin Barbara. Seit 2012 sind wir jetzt zu dritt, da wurde unsere Tochter Felicitas geboren.</p>
