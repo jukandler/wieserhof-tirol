@@ -11,8 +11,10 @@ import Piburgersee from "../assets/images/sommer/Piburgersee.jpg";
 import Rafting from "../assets/images/sommer/Rafting.jpg";
 import Pferde from "../assets/images/sommer/Pferde.jpg";
 import Wandern from "../assets/images/sommer/Wandern.jpg";
+import SummerCard from "../assets/images/sommer/SummerCard.png";
 import Expandable from '../components/expandable/Expandable';
 import { Link } from 'react-router-dom';
+import ContentImage from '../components/ContentImage/ContentImage';
 
 const activities = [
     {
@@ -160,6 +162,30 @@ function Sommer() {
                         description={activity.description}
                     />
                 ))}
+                <h2>Für noch mehr Urlaub im Ötztal</h2>
+                <h3>Mit der Ötztal Inside Summer Card von vielen Vorteilen profitieren</h3>
+                <p>Ab 7 Nächten Aufenthalt im Posthotel Kassl und gegen einen Aufpreis von 78.- Euro (Normalpreis 156.- Euro) erhalten Sie bei uns die Ötztal Inside Summer Card. Mit diesem Ferienpass erhalten Sie kostenfreien Zutritt zu Badeanlagen, Liften, Museen, Bussen und Freizeiteinrichtungen in Oetz und im gesamten Ötztal.</p>
+                <p>Die Ötztal Inside Summer Card, die Sie im Posthotel Kassl reduziert erwerben können, ermöglicht Ihnen und Ihrer Familie ganz viele Ferienerlebnisse zu günstigen Konditionen!<br></br>
+                <strong>Gültig vom 06.06. - 05.10.2025</strong><br></br><br></br>
+                <ContentImage imageDesktop={SummerCard} alt="Ötztal Inside Summer Card" type="small"/>
+                <h3>Folgende Leistungen sind mit der Ötztal Inside Summer Card inklusive:</h3>
+                <p>
+                  <strong>Für Ihren Urlaub in Oetz:</strong><br></br>
+                  •	8er-Gondel - Acherkogelbahn in Oetz bis 2.020 m<br></br>
+                  •	Erlebnisbad Oetz mit Großwasserrutsche und Beach-Volleyball<br></br>
+                  •	Badeanlage am Piburger See<br></br>
+                  •	Oetzer Tennisanlage (3 Sandplätze)<br></br><br></br>
+                  <strong>Für Ihr Erlebnis im restlichen Ötztal:</strong><br></br>
+                  •	Bergerlebnis mit 12 Sommerbergbahnen (täglich freie Fahrt)<br></br>
+                  •	Öffentliche Verkehrsmittel (unbeschränkt freie Fahrt im Ötztal)<br></br>
+                  •	AQUA DOME (2x pro Card im Juni, September, Anfang Oktober)<br></br>
+                  •	AREA 47 (2x pro Card im Juni, September, Anfang Oktober, 1x pro Card im Juli & August)<br></br>
+                  •	Ötzi-Dorf, Top Mountain Motorcycle Museum, Naturpark Haus uvm. (täglich freier Eintritt)<br></br>
+                  •	Schwimmbäder & Badeseen (täglich freier Eintritt)<br></br>
+                  •	Bikevergnügen mit dem Leihbike (1x pro Card)<br></br>
+                  •	Hochalpen-Panoramastraße (täglich freie Fahrt mit dem Bus)
+                </p>
+                </p>
             </div>
             <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
             <Footer />
