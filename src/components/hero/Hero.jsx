@@ -1,16 +1,25 @@
 import Logo from "../Logo/Logo";
-import HeroMobile from "../../assets/images/oetz-im-winter-2_mob.jpg";
-import HeroMobile2 from "../../assets/images/ochs_brandsee_mob.jpg";
-import HeroMobileWebp from "../../assets/images/oetz-im-winter-2_mob.webp";
-import HeroMobileWebp2 from "../../assets/images/ochs_brandsee_mob.webp";
-import HeroMobileAvif from "../../assets/images/oetz-im-winter-2_mob.avif";
-import HeroMobileAvif2 from "../../assets/images/ochs_brandsee_mob.avif";
-import HeroDesktop from "../../assets/images/oetz-im-winter-2.jpg";
-import HeroDesktop2 from "../../assets/images/ochs_brandsee.jpg";
-import HeroDesktopWebp from "../../assets/images/oetz-im-winter-2.webp";
-import HeroDesktopWebp2 from "../../assets/images/ochs_brandsee.webp";
-import HeroDesktopAvif from "../../assets/images/oetz-im-winter-2.avif";
-import HeroDesktopAvif2 from "../../assets/images/ochs_brandsee.avif";
+// import HeroMobile from "../../assets/images/hero/oetz-im-winter-2_mob.jpg";
+// import HeroMobileWebp from "../../assets/images/hero/oetz-im-winter-2_mob.webp";
+// import HeroMobileAvif from "../../assets/images/hero/oetz-im-winter-2_mob.avif";
+import HeroDesktop from "../../assets/images/hero/Spielplatz.jpg";
+import HeroDesktopWebp from "../../assets/images/hero/Spielplatz.webp";
+import HeroDesktopAvif from "../../assets/images/hero/Spielplatz.avif";
+
+import HeroMobile2 from "../../assets/images/hero/ochs_brandsee_mob.jpg";
+import HeroMobileWebp2 from "../../assets/images/hero/ochs_brandsee_mob.webp";
+import HeroMobileAvif2 from "../../assets/images/hero/ochs_brandsee_mob.avif";
+import HeroDesktop2 from "../../assets/images/hero/ochs_brandsee.jpg";
+import HeroDesktopWebp2 from "../../assets/images/hero/ochs_brandsee.webp";
+import HeroDesktopAvif2 from "../../assets/images/hero/ochs_brandsee.avif";
+
+import HeroDesktop3 from "../../assets/images/hero/Balkon.jpg";
+import HeroDesktopWebp3 from "../../assets/images/hero/Balkon.webp";
+import HeroDesktopAvif3 from "../../assets/images/hero/Balkon.avif";
+
+import HeroDesktop4 from "../../assets/images/hero/Haus.jpg";
+import HeroDesktopWebp4 from "../../assets/images/hero/Haus.webp";
+import HeroDesktopAvif4 from "../../assets/images/hero/Haus.avif";
 
 import './hero.css';
 import { useEffect, useState } from "react";
@@ -25,9 +34,9 @@ function Hero() {
             desktopJpg: HeroDesktop,
             desktopAvif: HeroDesktopAvif,
             desktopWebp: HeroDesktopWebp,
-            mobileJpg: HeroMobile,
-            mobileAvif: HeroMobileAvif,
-            mobileWebp: HeroMobileWebp
+            mobileJpg: HeroDesktop,
+            mobileAvif: HeroDesktopAvif,
+            mobileWebp: HeroDesktopWebp
         },
         {
             desktopJpg: HeroDesktop2,
@@ -36,6 +45,22 @@ function Hero() {
             mobileJpg: HeroMobile2,
             mobileAvif: HeroMobileAvif2,
             mobileWebp: HeroMobileWebp2
+        },
+        {
+            desktopJpg: HeroDesktop3,
+            desktopAvif: HeroDesktopAvif3,
+            desktopWebp: HeroDesktopWebp3,
+            mobileJpg: HeroDesktop3,
+            mobileAvif: HeroDesktopAvif3,
+            mobileWebp: HeroDesktopWebp3
+        },
+        {
+            desktopJpg: HeroDesktop4,
+            desktopAvif: HeroDesktopAvif4,
+            desktopWebp: HeroDesktopWebp4,
+            mobileJpg: HeroDesktop4,
+            mobileAvif: HeroDesktopAvif4,
+            mobileWebp: HeroDesktopWebp4
         }
     ]
 

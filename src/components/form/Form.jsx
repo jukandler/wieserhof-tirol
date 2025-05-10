@@ -97,6 +97,24 @@ function Form() {
                 />
             </div>
             <div className="form-group">
+                <label htmlFor="animals">Haustier*</label>
+                <input
+                    name="animals"
+                    className="form-control"
+                    id="animals"
+                    required
+                />
+            </div>
+            <div className="form-group">
+                <label htmlFor="breakfast">Interesse am Frühstückskorb? Falls ja, für wie viele Tage?*</label>
+                <input
+                    name="breakfast"
+                    className="form-control"
+                    id="breakfast"
+                    required
+                />
+            </div>
+            <div className="form-group">
                 <label htmlFor="message">Ihre Nachricht an uns</label>
                 <textarea
                     className="form-control"
