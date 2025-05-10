@@ -53,6 +53,17 @@ function PriceList() {
             <p>Der <b>Mindestaufenthalt</b> variiert je nach Saison - Für besonders kurze Aufenthalte (weniger als 3 Nächte) wird ein Aufschlag von 20% des Basispreises verrechnet.</p>
             <p>Die <b>Endreinigung</b> für die Ferienwohnung ist in den angeführten Preisen bereits enthalten.</p>
             <b>Check-In: ab 15:00 Uhr<br></br>Check-Out: bis 10:00 Uhr</b>
+            <p><b>Willkommensgeschenke</b> mit saisonalen hofeigenen & regionalen Produkten wie z.B.<br></br><br></br>
+            •	Hausgemachte Marmelade<br></br>
+            •	Almbutter<br></br>
+            •	selbstgemachter Apfelsaft<br></br>
+            •	Sirups<br></br>
+            •	Eier von glücklichen Hühnern vom Hof<br></br>
+            •	selbst gebrannter Schnaps  & diverse Likör<br></br>
+            zusätzlich<br></br>
+            •	Nespressokapseln und Tee-Starterset<br></br><br></br>
+            Auswahl und Umfang ist abhängig von der Aufenthaltsdauer.</p>
+
             <p>Die Angaben sind ohne Gewähr, es sind ausschließlich die Preise der Buchungsbestätigung ausschlaggebend. Buchungen sind nur verbindlich, wenn sie durch uns bestätigt werden.</p>
         </div>
     )
