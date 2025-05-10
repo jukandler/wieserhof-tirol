@@ -35,7 +35,7 @@ function PriceList() {
             <table>
                 <thead>
                     <tr>
-                        <th colSpan="2"><b>Basispreis pro Nacht bei Belegung bis max. 4 Personen</b></th>
+                        <th colSpan="2"><b>Basispreis pro Nacht bei Belegung für 2 Personen</b></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +47,7 @@ function PriceList() {
                     })}
                 </tbody>
             </table>
-            <p><b>Jede weitere Person</b> wird mit 25€ pro Nacht berechnet (Belegung bis max. 6 Personen).</p>
+            <p><b>Jede weitere Person</b> wird mit 25€ pro Nacht berechnet (Belegung bis max. 6 Personen), Kinder natürlich ermäßigt.</p>
             <p>zzgl. <b>Ortstaxe:</b> 4€ pro Person und Nacht (ab dem 15. Lebensjahr).</p>
             <p><b>Haustiere</b> sind bei uns herzlich willkommen und werden mit 15€ pro Nacht berechnet.</p>
             <p>Der <b>Mindestaufenthalt</b> variiert je nach Saison - Für besonders kurze Aufenthalte (weniger als 3 Nächte) wird ein Aufschlag von 20% des Basispreises verrechnet.</p>

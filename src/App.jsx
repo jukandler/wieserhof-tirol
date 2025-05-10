@@ -24,12 +24,14 @@ import Booking from "./pages/Booking";
 import Sommer from "./pages/Sommer";
 import Winter from "./pages/Winter";
 import Indoor from "./pages/Indoor";
+import StickyTopBar from "./components/StickyTopBar/StickyTopBar";
 
 function App() {
   return (
     <div className="App">
       <HashRouter basename={import.meta.env.PUBLIC_URL}>
         <ScrollToTop />
+        <StickyTopBar />
         <Navigation />
         <Routes>
           <Route exact path="/" element={<Home/>} />

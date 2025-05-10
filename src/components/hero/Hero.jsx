@@ -96,7 +96,11 @@ function Hero() {
             <div className="logo-container">
                 <Logo />
             </div>
-            <FreeSlots />
+            {/* <FreeSlots /> */}
+            <div className="phrase">
+                <span>Hast du dich verloren im Chaos der letzten Zeit...</span><br></br>
+                <span>ein Urlaub am Wieserhof führt dich zurück zur Heiterkeit!</span>
+            </div>
         </header>
     )
 }

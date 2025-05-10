@@ -25,3 +25,10 @@
   url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: bold;
 }
+
+@font-face {
+  font-family: "GreatVibes";
+  src: local("GreatVibes"),
+  url("./fonts/GreatVibes/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
