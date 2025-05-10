@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './galleryNew.css';
 
-const GalleryNew = ({ images }) => {
+const GalleryNew = ({ images, size = "default" }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -98,9 +98,9 @@ const GalleryNew = ({ images }) => {
     <div className="gallery-container" ref={galleryRef}>
       <div className="gallery-main">
         <img 
-          src={images[activeIndex].large} 
-          alt={images[activeIndex].alt} 
-          className="gallery-main-image" 
+          src={images[activeIndex].src} 
+          alt={images[activeIndex].caption} 
+          className={`gallery-main-image size-${size}`}
           onClick={() => openLightbox(activeIndex)}
         />
         <div className="gallery-main-caption">
@@ -129,7 +129,7 @@ const GalleryNew = ({ images }) => {
               className={`thumbnail-item ${index === activeIndex ? 'active' : ''}`}
               onClick={() => handleThumbnailClick(index)}
             >
-              <img src={image.thumbnail} alt={`Thumbnail ${index + 1}`} />
+              <img src={image.src} alt={`Thumbnail ${index + 1}`} />
             </div>
           ))}
         </div>
@@ -166,7 +166,7 @@ const GalleryNew = ({ images }) => {
             
             <div className="lightbox-image-container">
               <img 
-                src={images[lightboxIndex].large} 
+                src={images[lightboxIndex].src} 
                 alt={images[lightboxIndex].alt} 
                 className="lightbox-image" 
               />

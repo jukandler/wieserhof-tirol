@@ -1,7 +1,7 @@
 import Footer from '../components/footer/Footer';
 import Hero from '../components/hero/Hero';
 import ImageTileBad from "../assets/images/image-tile-bad.jpg"
-import ImageTileBalkonView from "../assets/images/balkon-view.jpg"
+import ImageTileBalkonView from "../assets/images/wieserhof/Wieserhof Sommer.jpeg"
 import ImageTileOetztal from "../assets/images/skigebiet-hochoetz.jpeg"
 import SplitTiles from '../components/SplitTiles/SplitTiles';
 import ActivityTiles from '../components/ActivityTiles/ActivityTiles';
@@ -12,7 +12,7 @@ function Home() {
         <div id="home">
             <Hero />
             <section className="grid-text_wide" style={{ margin: "60px auto" }}>
-                <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom Skigebiet entfernt.</h3>
+                <h3>Die exklusive Ferienwohnung im Ötztal, 5 Minuten vom familienfreundlichen Wander- und Skigebiet entfernt.</h3>
                 <p>Herzlich Willkommen am Bergbauernhof Wieserhof in Oetz in Tirol! Der Wieserhof befindet sich in Alleinlage auf ca. 1.100 m Seehöhe abseits von jeglichem Verkehr und ist der ideale Urlaubsort für Ruhesuchende, Naturliebhaber und Familien.</p>
                 <Link to="/anfrage"><button className="button button-primary">Jetzt unverbindlich anfragen</button></Link>
                 {/* <div className="divider space-bottom"></div> */}
@@ -37,7 +37,7 @@ function Home() {
                 imageTileTitle="Das Ötztal<br>Natur und Aktiv"
                 image={ImageTileOetztal}
                 textTileTitle="Ausflugsziele im Ötztal"
-                text="Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung."
+                text="Der Wieserhof ist der ideale Ausgangspunkt für viele Wander-, Berg und Skitouren in der nahen Umgebung. Das familienfreundliche Wander- & Skigebiet Hochoetz/Kühtai erreichen Sie von uns aus in ca. 5 Autominuten. Die nächsten Einkaufsmöglichkeiten (Apotheke, Lebensmittel, Souveniers, Bekleidung, ...) befinden sich im Hauptort Oetz in ca. 4 km Entfernung."
                 reverse={true}
             />
             <ActivityTiles />

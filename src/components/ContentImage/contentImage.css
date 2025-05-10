@@ -2,10 +2,16 @@
     position: relative;
     width: 100%;
     display: block;
-
+    
     @media (min-width: 750px) {
         max-width: min(648px, calc(100% - (2 * 25px)));
+
         margin: 0 auto;
+
+        &.size-small {
+            max-width: 350px;
+            margin: unset;
+        }
     }
 
     img {
