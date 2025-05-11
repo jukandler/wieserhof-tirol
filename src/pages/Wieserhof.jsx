@@ -18,7 +18,7 @@ import Pizzaofen from "../assets/images/wieserhof/Pizzaofen.jpg";
 import Spielplatz from "../assets/images/wieserhof/Spielplatz Sommer.jpg";
 import Willkommensgruß from "../assets/images/wieserhof/Willkommensgruß.jpg";
 
-// Gallerie alte Bilder
+// Galerie alte Bilder
 import AussichtAlt from "../assets/images/wieserhof/alt/Aussicht.jpg";
 import Bauer from "../assets/images/wieserhof/alt/Bauer.jpg";
 import Erbhof from "../assets/images/wieserhof/alt/erbhof.jpg";
@@ -27,6 +27,15 @@ import Heu from "../assets/images/wieserhof/alt/Heu.jpg";
 import Hof from "../assets/images/wieserhof/alt/Hof.jpg";
 import ski from "../assets/images/wieserhof/alt/ski.jpg";
 import Traktor from "../assets/images/wieserhof/alt/Traktor.jpg";
+
+// Galerie neue Bilder
+import Feldarbeit from "../assets/images/wieserhof/neu/Feldarbeit.jpg";
+import Handarbeit from "../assets/images/wieserhof/neu/Handarbeit.jpg";
+import Heukran from "../assets/images/wieserhof/neu/Heukran.jpg";
+import Mäharbeit from "../assets/images/wieserhof/neu/Mäharbeit.jpg";
+import Mäharbeit2 from "../assets/images/wieserhof/neu/Mäharbeit2.jpg";
+import Miststreuen from "../assets/images/wieserhof/neu/Miststreuen.jpg";
+
 
 // Tierfotos
 import Bella from "../assets/images/wieserhof/tiere/Bella.jpg";
@@ -131,6 +140,33 @@ const galleryImagesOld = [
     }
 ];
 
+const galleryImagesNew = [
+    {
+      src: Feldarbeit,
+      caption: 'Feldarbeit mit Aussicht'
+    },
+    {
+      src: Heukran,
+      caption: 'Heukran im vollen Stadl'
+    },
+    {
+      src: Miststreuen,
+      caption: 'Miststreuen'
+    },
+    {
+      src: Mäharbeit,
+      caption: 'Mäharbeit'
+    },
+    {
+      src: Mäharbeit2,
+      caption: 'Mäharbeit'
+    },
+    {
+      src: Handarbeit,
+      caption: 'Ganz ohne Handarbeit geht nichts'
+    },
+];
+
 function Wieserhof() {
     return (
         <div id="wieserhof">
@@ -146,8 +182,11 @@ function Wieserhof() {
                 <p>Wir betreiben unsere Landwirtschaft im Nebenerwerb mit Tierhaltung (Ziegen, Pferden, Ponys, Hühnern, Enten, Hasen und Katzen), haben jedoch auch Streuobstwiesen mit Äpfeln, Birnen und Zwetschken und einen großen Bauerngarten mit verschiedenen Gemüsesorten und Beeren. Mittlerweile erleichtern hangtaugliche Spezialmaschinen die Heuarbeiten, es ist jedoch nach wie vor eine Herausforderung die steilen Flächen zu bewirtschaften.</p>
                 <h3>Ein Hof mit langer Geschichte</h3>
                 <p>Unser Hof ist nachweislich seit 1680 in Familienbesitz, es gibt jedoch Hinweise das der Hof schon viel früher entstanden ist. 1977 hatte mein Großvater Johann Fischer und seine Gattin Johanna Fischer die damaligen Besitzer vom Hof die große Ehre das ihnen der Titel Erbhof verliehen wurde. Wir sind stolz darauf unseren  Bergbauernhof der über Generationen mit sicherlich vielen Höhen und Tiefen, Freuden und auch Leid immer wieder gehalten werden konnte und somit von Generation an Generation weitergegeben wurde. Unsere Auffassung ist es auch das wir das unseren Ahnen in gewisser Weise schuldig sind den Hof weiterzuführen und auch stolz darauf sind was unsere Vorfahren mit viel Mühen und mit vielen fleißigen Händen geschaffen haben.  </p>
+                <p style={{textAlign: "center", margin: 0}}><strong>Landwirtschaft anno dazumal</strong></p>
                 <ImageGallery size="small" images={galleryImagesOld} />
                 <p>Wir betreiben unseren Hof in mittlerweile 10. Generation bewusst nicht als Biobetrieb, denn wir sind der Auffassung, das es viel wertvoller ist unseren Betrieb in natürlicher Weise so weiterzuführen, wie es auch schon unsere Ahnen taten und das dies mit keinem Titel vergleichbar ist den man erwerben kann indem man sich an die Vorgaben hält die uns die EU und andere Behörden vorschreiben möchten.</p>
+                <p style={{textAlign: "center", margin: 0}}><strong>Landwirtschaft heute</strong></p>
+                <ImageGallery size="small" images={galleryImagesNew} />
                 <h3>Unsere Familie</h3>
                 <p>Seit meiner Kindheit habe ich die Ehre am Hof mitzuarbeiten und seit 2009 ist der Hof jetzt auch in unserem Besitz. Wir das bin ich, der „Wieserbauer“ Michl und meine Frau die Bäuerin Barbara. Seit 2012 sind wir jetzt zu dritt, da wurde unsere Tochter Felicitas geboren.</p>
                 <p>Seit Weihnachten 2022 dürfen wir uns jetzt auch Gastgeber nennen, denn dort ist ein von uns schon lange dagewesener Wunsch in Erfüllung gegangen, seit damals vermieten wir unsere mit viel Herzblut gestaltete Ferienwohnung! Es ist eine große Freude für uns unseren Gästen einen Einblick in unseren Hofalltag zu gewähren und mit Ihnen alle die Vorteile die unsere Hof in Alleinlage bietet zu teilen.</p>
