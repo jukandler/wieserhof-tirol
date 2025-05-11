@@ -162,12 +162,20 @@ function Sommer() {
                         description={activity.description}
                     />
                 ))}
-                <h2>Für noch mehr Urlaub im Ötztal</h2>
-                <h3>Mit der Ötztal Inside Summer Card von vielen Vorteilen profitieren</h3>
-                <p>Ab 7 Nächten Aufenthalt im Posthotel Kassl und gegen einen Aufpreis von 78.- Euro (Normalpreis 156.- Euro) erhalten Sie bei uns die Ötztal Inside Summer Card. Mit diesem Ferienpass erhalten Sie kostenfreien Zutritt zu Badeanlagen, Liften, Museen, Bussen und Freizeiteinrichtungen in Oetz und im gesamten Ötztal.</p>
-                <p>Die Ötztal Inside Summer Card, die Sie im Posthotel Kassl reduziert erwerben können, ermöglicht Ihnen und Ihrer Familie ganz viele Ferienerlebnisse zu günstigen Konditionen!<br></br>
-                <strong>Gültig vom 06.06. - 05.10.2025</strong><br></br><br></br>
-                <ContentImage imageDesktop={SummerCard} alt="Ötztal Inside Summer Card" type="small"/>
+                <h2>Ötztal Inside Summer Card</h2>
+                <h3 style={{textAlign: "center"}}>Für noch mehr Urlaub im Ötztal</h3>
+                <div style={{display: "flex", justifyContent: "center"}}>
+                  <ContentImage imageDesktop={SummerCard} alt="Ötztal Inside Summer Card" type="small"/>
+                </div>
+                <p>Wir haben uns als Beherbergungsbetrieb bewusst gegen die Teilnahme an der Ötztal Summer Card entschieden, da es unserer Meinung nach so viel mehr zu entdecken gibt im Ötztal, als die klassischen Anlaufstellen und wir einfach die Erfahrung gemacht haben, dass sich auch viele unserer Gäste bewusst für einen Urlaub abseits der ausgetretenen Pfade entscheiden.</p>
+                <p>Nicht desto trotz können wir auch verstehen, dass die vielen Vorteile der Ötztal Inside Summer Card auch verlockend klingen.<br></br>
+                <p>Wir sind am Wieserhof daher gerne bereit, die Kaufkarte für Sie zu besorgen, damit Sie mit diesem Ferienpass kostenfreien Zutritt zu Badeanlagen, Liften, Museen, Bussen und Freizeiteinrichtungen in Oetz und im gesamten Ötztal genießen können.</p>
+                <p>Als Vorteil für Direktbucher bei uns am Wieserhof bieten wir Ihnen auf die Kaufkarte der Ötztal Inside Summer Card auf die aktuelle Raten:</p>
+                <p>•	ab 7 Nächten Aufenthalt 	10% Rabatt<br></br>
+                •	ab 10 Nächten Aufenthalt 	15 % Rabatt und<br></br>
+                •	ab 14 Nächten Aufenthalt	20% Rabatt<br></br><br></br>
+                und ermöglichen Ihnen und Ihrer Familie ganz viele Ferienerlebnisse zu günstigen Konditionen!
+                </p>
                 <h3>Folgende Leistungen sind mit der Ötztal Inside Summer Card inklusive:</h3>
                 <p>
                   <strong>Für Ihren Urlaub in Oetz:</strong><br></br>
