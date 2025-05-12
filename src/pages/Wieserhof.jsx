@@ -125,7 +125,7 @@ const galleryImagesOld = [
     },
     {
       src: Frau,
-      caption: 'Küchenarbeit'
+      caption: 'Milch zentrifugieren'
     },
     {
       src: ski,
@@ -133,7 +133,7 @@ const galleryImagesOld = [
     },
     {
       src: Traktor,
-      caption: 'Stallarbeit'
+      caption: '1. Traktor am Hof'
     },
     {
       src: Erbhof
