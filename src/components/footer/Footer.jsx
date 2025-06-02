@@ -35,7 +35,7 @@ function Footer() {
                 </a>
             </div>
             <BookingEmbed />
-            <a className="urlaub-am-bauernhof-logo" href="http://www.urlaubambauernhof.at/" target="_blank" rel="noopener noreferrer">
+            <a className="urlaub-am-bauernhof-logo" href="https://www.urlaubambauernhof.at/de/hoefe/wieserhof" target="_blank" rel="noopener noreferrer">
                 <img src={UABLogo} alt="Logo Urlaub am Bauernhof" style={{width: "150px", margin: "10px 0"}} loading="lazy"/>
             </a>
             <a className="tirol-logo" href="" target="_blank" rel="noopener noreferrer">
