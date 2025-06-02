@@ -17,6 +17,13 @@ import KraftplatzOfenbank from "../assets/images/wieserhof/Kraftplatz ofenbank.j
 import Pizzaofen from "../assets/images/wieserhof/Pizzaofen.jpg";
 import Spielplatz from "../assets/images/wieserhof/Spielplatz Sommer.jpg";
 import Willkommensgruß from "../assets/images/wieserhof/Willkommensgruß.jpg";
+import AussichtSunset from "../assets/images/wieserhof/AussichtSunset.jpg";
+import Garten2 from "../assets/images/wieserhof/Garten.jpg";
+import Sandkiste from "../assets/images/wieserhof/Sandkiste.jpg";
+import Schaukel from "../assets/images/wieserhof/Schaukel.jpg";
+import SpielplatzHerbst from "../assets/images/wieserhof/Spielplatz Herbst.jpg";
+import SpielplatzAussicht from "../assets/images/wieserhof/SpielplatzAussicht.jpg";
+import Willkommen from "../assets/images/wieserhof/Willkommen.jpg";
 
 // Galerie alte Bilder
 import AussichtAlt from "../assets/images/wieserhof/alt/Aussicht.jpg";
@@ -103,6 +110,34 @@ const galleryImages = [
     {
       src: Willkommensgruß,
       caption: 'Willkommensgruß'
+    },
+    {
+      src: AussichtSunset,
+      caption: 'Aussicht'
+    },
+    {
+      src: Garten2,
+      caption: 'Kräutergarten'
+    },
+    {
+      src: Sandkiste,
+      caption: 'Sandkiste für die Kleinen'
+    },
+    {
+      src: Schaukel,
+      caption: 'Schaukel und Rutsche'
+    },
+    {
+      src: SpielplatzHerbst,
+      caption: 'Spielplatz und Pizzaofen vor Bergpanorama'
+    },
+    {
+      src: SpielplatzAussicht,
+      caption: 'Spielplatz mit Aussicht'
+    },
+    {
+      src: Willkommen,
+      caption: 'Herzlich Willkommen'
     }
 ]
 
