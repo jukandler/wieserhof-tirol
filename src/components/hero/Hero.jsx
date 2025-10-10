@@ -11,9 +11,9 @@ import HeroDesktop2 from "../../assets/images/hero/Badezimmer.jpg";
 import HeroDesktopWebp2 from "../../assets/images/hero/Badezimmer.webp";
 import HeroDesktopAvif2 from "../../assets/images/hero/Badezimmer.avif";
 
-import HeroDesktop3 from "../../assets/images/hero/Schneemann.jpg";
-import HeroDesktopWebp3 from "../../assets/images/hero/Schneemann.webp";
-import HeroDesktopAvif3 from "../../assets/images/hero/Schneemann.avif";
+import HeroDesktop3 from "../../assets/images/hero/schneemann.jpg";
+import HeroDesktopWebp3 from "../../assets/images/hero/schneemann.webp";
+import HeroDesktopAvif3 from "../../assets/images/hero/schneemann.avif";
 
 import './hero.css';
 import { useEffect, useState } from "react";
