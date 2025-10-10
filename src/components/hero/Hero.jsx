@@ -1,29 +1,22 @@
 import Logo from "../Logo/Logo";
-// import HeroMobile from "../../assets/images/hero/oetz-im-winter-2_mob.jpg";
-// import HeroMobileWebp from "../../assets/images/hero/oetz-im-winter-2_mob.webp";
-// import HeroMobileAvif from "../../assets/images/hero/oetz-im-winter-2_mob.avif";
-import HeroDesktop from "../../assets/images/hero/Spielplatz.jpg";
-import HeroDesktopWebp from "../../assets/images/hero/Spielplatz.webp";
-import HeroDesktopAvif from "../../assets/images/hero/Spielplatz.avif";
 
-import HeroMobile2 from "../../assets/images/hero/ochs_brandsee_mob.jpg";
-import HeroMobileWebp2 from "../../assets/images/hero/ochs_brandsee_mob.webp";
-import HeroMobileAvif2 from "../../assets/images/hero/ochs_brandsee_mob.avif";
-import HeroDesktop2 from "../../assets/images/hero/ochs_brandsee.jpg";
-import HeroDesktopWebp2 from "../../assets/images/hero/ochs_brandsee.webp";
-import HeroDesktopAvif2 from "../../assets/images/hero/ochs_brandsee.avif";
+import HeroMobile from "../../assets/images/hero/oetz-im-winter-2_mob.jpg";
+import HeroMobileWebp from "../../assets/images/hero/oetz-im-winter-2_mob.webp";
+import HeroMobileAvif from "../../assets/images/hero/oetz-im-winter-2_mob.avif";
+import HeroDesktop from "../../assets/images/hero/oetz-im-winter-2.jpg";
+import HeroDesktopWebp from "../../assets/images/hero/oetz-im-winter-2.webp";
+import HeroDesktopAvif from "../../assets/images/hero/oetz-im-winter-2.avif";
 
-import HeroDesktop3 from "../../assets/images/hero/Balkon.jpg";
-import HeroDesktopWebp3 from "../../assets/images/hero/Balkon.webp";
-import HeroDesktopAvif3 from "../../assets/images/hero/Balkon.avif";
+import HeroDesktop2 from "../../assets/images/hero/Badezimmer.jpg";
+import HeroDesktopWebp2 from "../../assets/images/hero/Badezimmer.webp";
+import HeroDesktopAvif2 from "../../assets/images/hero/Badezimmer.avif";
 
-import HeroDesktop4 from "../../assets/images/hero/Haus.jpg";
-import HeroDesktopWebp4 from "../../assets/images/hero/Haus.webp";
-import HeroDesktopAvif4 from "../../assets/images/hero/Haus.avif";
+import HeroDesktop3 from "../../assets/images/hero/Schneemann.jpg";
+import HeroDesktopWebp3 from "../../assets/images/hero/Schneemann.webp";
+import HeroDesktopAvif3 from "../../assets/images/hero/Schneemann.avif";
 
 import './hero.css';
 import { useEffect, useState } from "react";
-import FreeSlots from "../freeSlots/FreeSlots";
 
 function Hero() {
 
@@ -34,17 +27,17 @@ function Hero() {
             desktopJpg: HeroDesktop,
             desktopAvif: HeroDesktopAvif,
             desktopWebp: HeroDesktopWebp,
-            mobileJpg: HeroDesktop,
-            mobileAvif: HeroDesktopAvif,
-            mobileWebp: HeroDesktopWebp
+            mobileJpg: HeroMobile,
+            mobileAvif: HeroMobileAvif,
+            mobileWebp: HeroMobileWebp
         },
         {
             desktopJpg: HeroDesktop2,
             desktopAvif: HeroDesktopAvif2,
             desktopWebp: HeroDesktopWebp2,
-            mobileJpg: HeroMobile2,
-            mobileAvif: HeroMobileAvif2,
-            mobileWebp: HeroMobileWebp2
+            mobileJpg: HeroDesktop2,
+            mobileAvif: HeroDesktopAvif2,
+            mobileWebp: HeroDesktopWebp2
         },
         {
             desktopJpg: HeroDesktop3,
@@ -53,14 +46,6 @@ function Hero() {
             mobileJpg: HeroDesktop3,
             mobileAvif: HeroDesktopAvif3,
             mobileWebp: HeroDesktopWebp3
-        },
-        {
-            desktopJpg: HeroDesktop4,
-            desktopAvif: HeroDesktopAvif4,
-            desktopWebp: HeroDesktopWebp4,
-            mobileJpg: HeroDesktop4,
-            mobileAvif: HeroDesktopAvif4,
-            mobileWebp: HeroDesktopWebp4
         }
     ]
 
@@ -96,7 +81,6 @@ function Hero() {
             <div className="logo-container">
                 <Logo />
             </div>
-            {/* <FreeSlots /> */}
             <div className="phrase">
                 <span>Hast du dich verloren im Chaos der letzten Zeit...</span><br></br>
                 <span>ein Urlaub am Wieserhof führt dich zurück zur Heiterkeit!</span>
