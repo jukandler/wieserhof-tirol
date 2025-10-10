@@ -3,7 +3,7 @@ import PinIcon from "../../assets/icons/pin.png";
 import CallIcon from "../../assets/icons/call.png";
 import MailIcon from "../../assets/icons/mail.png";
 import CalendarIcon from "../../assets/icons/calendar.png";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import { useLocation } from 'react-router-dom'
@@ -24,6 +24,14 @@ function Navigation() {
         e.preventDefault();
         setActivitiesExpanded(!activitiesExpanded);
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("navbar-open");
+        } else {
+            document.body.classList.remove("navbar-open");
+        }
+    }, [isOpen])
 
     return (
         <nav>
