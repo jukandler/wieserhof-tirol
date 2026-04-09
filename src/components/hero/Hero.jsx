@@ -1,19 +1,37 @@
 import Logo from "../Logo/Logo";
 
-import HeroMobile from "../../assets/images/hero/oetz-im-winter-2_mob.jpg";
-import HeroMobileWebp from "../../assets/images/hero/oetz-im-winter-2_mob.webp";
-import HeroMobileAvif from "../../assets/images/hero/oetz-im-winter-2_mob.avif";
-import HeroDesktop from "../../assets/images/hero/oetz-im-winter-2.jpg";
-import HeroDesktopWebp from "../../assets/images/hero/oetz-im-winter-2.webp";
-import HeroDesktopAvif from "../../assets/images/hero/oetz-im-winter-2.avif";
+// Winter
+// import HeroMobile from "../../assets/images/hero/oetz-im-winter-2_mob.jpg";
+// import HeroMobileWebp from "../../assets/images/hero/oetz-im-winter-2_mob.webp";
+// import HeroMobileAvif from "../../assets/images/hero/oetz-im-winter-2_mob.avif";
+// import HeroDesktop from "../../assets/images/hero/oetz-im-winter-2.jpg";
+// import HeroDesktopWebp from "../../assets/images/hero/oetz-im-winter-2.webp";
+// import HeroDesktopAvif from "../../assets/images/hero/oetz-im-winter-2.avif";
+
+// import HeroDesktop2 from "../../assets/images/hero/Badezimmer.jpg";
+// import HeroDesktopWebp2 from "../../assets/images/hero/Badezimmer.webp";
+// import HeroDesktopAvif2 from "../../assets/images/hero/Badezimmer.avif";
+
+// import HeroDesktop3 from "../../assets/images/hero/schneemann.jpg";
+// import HeroDesktopWebp3 from "../../assets/images/hero/schneemann.webp";
+// import HeroDesktopAvif3 from "../../assets/images/hero/schneemann.avif";
+
+// Sommer
+import HeroMobile from "../../assets/images/hero/ochs_brandsee_mob.jpg";
+import HeroMobileWebp from "../../assets/images/hero/ochs_brandsee_mob.webp";
+import HeroMobileAvif from "../../assets/images/hero/ochs_brandsee_mob.avif";
+import HeroDesktop from "../../assets/images/hero/ochs_brandsee.jpg";
+import HeroDesktopWebp from "../../assets/images/hero/ochs_brandsee.webp";
+import HeroDesktopAvif from "../../assets/images/hero/ochs_brandsee.avif";
 
 import HeroDesktop2 from "../../assets/images/hero/Badezimmer.jpg";
 import HeroDesktopWebp2 from "../../assets/images/hero/Badezimmer.webp";
 import HeroDesktopAvif2 from "../../assets/images/hero/Badezimmer.avif";
 
-import HeroDesktop3 from "../../assets/images/hero/schneemann.jpg";
-import HeroDesktopWebp3 from "../../assets/images/hero/schneemann.webp";
-import HeroDesktopAvif3 from "../../assets/images/hero/schneemann.avif";
+import HeroDesktop3 from "../../assets/images/hero/Haus.jpg";
+import HeroDesktopWebp3 from "../../assets/images/hero/Haus.webp";
+import HeroDesktopAvif3 from "../../assets/images/hero/Haus.avif";
+
 
 import './hero.css';
 import { useEffect, useState } from "react";
