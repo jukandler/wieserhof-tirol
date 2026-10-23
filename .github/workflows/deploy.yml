@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '24'
 
       - name: Add environment variables
         run: |
@@ -24,7 +24,7 @@ jobs:
           echo "VITE_SPREADSHEET_ID=${{ secrets.VITE_SPREADSHEET_ID }}" >> $GITHUB_ENV
   
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build project
         run: npm run build
